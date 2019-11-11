@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Светлана Хамматова](https://up.htmlacademy.ru/adaptive/18/user/1039823).
-* Наставник: `Неизвестно`.
+* Наставник: Илья Сачев.
 
 ---
 
