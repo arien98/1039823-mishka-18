@@ -16,7 +16,7 @@
               <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="knitting.html">Вязание на заказ</a>
+              <a>Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
@@ -42,7 +42,7 @@
           <label class="feedback__label type__item" for="toy">Детская игрушка</label>
         </fieldset>
         <fieldset class="feedback__item multitype">
-          <legend class="feedback__legend multitype__legend">Тип</legend>
+          <legend class="feedback__legend multitype__legend">Цвет</legend>
           <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="white" id="white" checked>
           <label class="feedback__label multitype__item" for="white">Белый</label>
           <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="gray" id="gray" checked>
@@ -59,32 +59,32 @@
         <fieldset class="feedback__item data">
           <legend class="feedback__legend data__legend">ФИО</legend>
           <label class="feedback__label data__label" for="name">Имя:</label>
-          <input class="data__field" type="text" name="name" id="name" required placeholder="Введите ваше имя*">
-          <label class="feedback__label data__label" for="last-name">Имя:</label>
-          <input class="data__field" type="text" name="last-name" id="last-name" required placeholder="Укажите фамилию*">
-          <label class="feedback__label data__label" for="fathers-name">Имя:</label>
-          <input class="data__field" type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
+          <input class="feedback__field data__field" type="text" name="name" id="name" required placeholder="Введите ваше имя*">
+          <label class="feedback__label data__label" for="last-name">Фамилия:</label>
+          <input class="feedback__field data__field" type="text" name="last-name" id="last-name" required placeholder="Укажите фамилию*">
+          <label class="feedback__label data__label" for="fathers-name">Отчество:</label>
+          <input class="feedback__field data__field" type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
         </fieldset>
         <div class="feedback__item">
           <label class="feedback__legend" for="phone">Тел</label>
-          <input class="phone-field" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input class="feedback__field feedback__field--phone phone-field" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </div>
         <div class="feedback__item">
           <label class="feedback__legend" for="e-mail">E-mail</label>
-          <input class="email-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+          <input class="feedback__field email-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
         </div>
         <div class="feedback__item">
           <label class="feedback__legend" for="additional">Доп</label>
-          <textarea name="additional" id="additional" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="feedback__field--frame" name="additional" id="additional" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           <small class="feedback__caption">*Поля обязательны для заполнения</small>
         </div>
         <button class="button feedback__button" type="submit" name="feedback-button">Отправить заказ</button>
       </form>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__socials socials">
+      <section class="page-footer__socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="socials__list">
+        <ul class="socials">
           <li class="socials__item">
             <a class="socials__link socials__link--instagram" href="http://www.instagram.com/mishkashop">
               <img src="img/instagram.svg" alt="Мы в инстаграме">

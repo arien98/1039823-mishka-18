@@ -16,7 +16,7 @@
               <a>Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="knitting.html">Вязание на заказ</a>
+              <a href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
@@ -37,6 +37,7 @@
           <a href="product1.html"><p class="product__name">Зайчик-попрыгайчик</p></a>
           <a href="product1.html"><img class="product__image" src="img/product1.jpg" alt="Зайчик-попрыгайчик" width="260" height="195"></a>
           <p class="prooduct__description">Рост 30 см, вес 200 г</p>
+          <div class="product__line"></div>
           <p class="product__price">1&thinsp;200 руб.</p>
           <button class="product__button" type="button" name="basket-button"></button>
         </li>
@@ -44,6 +45,7 @@
           <a href="product2.html"><p class="product__name">Корзинка для белья</p></a>
           <a href="product2.html"><img class="product__image" src="img/product2.jpg" alt="Корзинка для белья" width="260" height="195"></a>
           <p class="prooduct__description">Диаметр 15 см, высота 10 см</p>
+          <div class="product__line"></div>
           <p class="product__price">690 руб.</p>
           <button class="product__button" type="button" name="basket-button"></button>
         </li>
@@ -51,6 +53,7 @@
           <a href="product3.html"><p class="product__name">Большая корзинка для игрушек</p></a>
           <a href="product3.html"><img class="product__image" src="img/product3.jpg" alt="Большая корзинка для игрушек" width="260" height="195"></a>
           <p class="prooduct__description">Диаметр 30 см, высота 30 см</p>
+          <div class="product__line"></div>
           <p class="product__price">1&thinsp;500 руб.</p>
           <button class="product__button" type="button" name="basket-button"></button>
         </li>
@@ -60,14 +63,14 @@
         <video class="production__video" controls="controls" poster="img/video-mobile.png" width="260" height="150">
           <source src="https://youtube.com/mishka-production">
         </video>
-        <p class="product__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="product__button" type="button" name="product-button">Сделать заказ</button>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="button product__button" type="button" name="product-button">Сделать заказ</button>
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__socials socials">
+      <section class="page-footer__socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="socials__list">
+        <ul class="socials">
           <li class="socials__item">
             <a class="socials__link socials__link--instagram" href="http://www.instagram.com/mishkashop">
               <img src="img/instagram.svg" alt="Мы в инстаграме">
@@ -97,12 +100,14 @@
         <h2 class="modal__title">Добавить в корзину</h2>
         <form class="modal__size size-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="size-form__legend">Выберите размер:</p>
-          <input type="radio" name="size" value="S" id="s">
-          <label class="size-form__item" for="s">S</label>
-          <input type="radio" name="size" value="M">
-          <label class="size-form__item" for="m">M</label>
-          <input type="radio" name="size" value="L">
-          <label class="size-form__item" for="l">L</label>
+          <div class="size-form__wrapper">
+            <input class="size-form__checkbox" type="radio" name="size" value="S" id="s">
+            <label class="size-form__item" for="s">S</label>
+            <input class="size-form__checkbox" type="radio" name="size" value="M">
+            <label class="size-form__item" for="m">M</label>
+            <input class="size-form__checkbox" type="radio" name="size" value="L">
+            <label class="size-form__item" for="l">L</label>
+          </div>
         </form>
         <button class="button modal__button" type="button" name="size-button">Добавить</button>
       </div>
