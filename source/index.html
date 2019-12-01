@@ -3,7 +3,7 @@
   <head>
     <meta сharset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
   </head>
   <body>
@@ -16,15 +16,15 @@
               <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="knitting.html">Вязание на заказ</a>
+              <a href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a href="search.html">Поиск по сайту</a>
+              <a class="user-list__link" href="search.html">Поиск по сайту</a>
             </li>
             <li class="user-list__item">
-              <a href="bin.html">Корзина: пока пуста</a>
+              <a class="user-list__link" href="bin.html">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -32,34 +32,38 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Магазин "Мишка"</h1>
-      <b class="page-title">Милые штуки ручной работы для дома</b>
+      <div class="page-wrapper">
+        <b class="page-title">Милые штуки ручной работы для дома</b>
+      </div>
       <ul class="links">
         <li class="links__item">
           <a href="decor.html">Предметы интерьера</a>
+          <img src="img/interior-svg.svg" alt="Настольная лампа" width="40" height="62">
         </li>
         <li class="links__item">
           <a href="toys.html">Детские игрушки</a>
+          <img src="img/toy-svg.svg" alt="Игра-конструктор" width="60" height="60">
         </li>
       </ul>
       <section class="week-prooduct">
         <h2 class="week-prooduct__title">Вязаные корзинки</h2>
         <p class="week-prooduct__subhead">Товар недели</p>
         <p class="week-prooduct__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="week-prooduct__qualities properties">
-          <tr class="properties__row">
-            <td class="properties__name">Цвет:</td>
-            <td class="properties__col">«Тиффани»/серый</td>
-          </tr>
-          <tr class="properties__row">
-            <td class="properties__name">Диаметр:</td>
-            <td class="properties__col">25 см</td>
-          </tr>
-          <tr class="properties__row">
-            <td class="properties__name">Высота:</td>
-            <td class="properties__col">15 см</td>
-          </tr>
-        </table>
-        <img class="week-prooduct__pic" src="img/catalog-item.1jpg" alt="Набор корзинок" width="260" height="315">
+        <section class="week-prooduct__qualities properties">
+          <div class="properties__row">
+            <p class="properties__name">Цвет:</p>
+            <p class="properties__col">«Тиффани»/серый</p>
+          </div>
+          <div class="properties__row">
+            <p class="properties__name">Диаметр:</p>
+            <p class="properties__col">25 см</p>
+          </div>
+          <div class="properties__row">
+            <p class="properties__name">Высота:</p>
+            <p class="properties__col">15 см</p>
+          </div>
+        </section>
+        <img class="week-prooduct__pic" src="img/catalog-item1.jpg" alt="Набор корзинок" width="260" height="315">
         <p class="week-prooduct__price">Цена: 990 руб.</p>
         <button class="button week-prooduct__button" type="button" name="button">Заказать</button>
       </section>
@@ -67,27 +71,27 @@
         <h2 class="odds__title">Коротко о нас:</h2>
         <ul class="odds__list">
           <li class="odds__item">
-            <img class="odds__image" src="img/flower.svg" alt="Цветок" width="32" height="37">
+            <img class="odds__icon" src="img/flower.svg" alt="Цветок" width="32" height="37">
             <p>Экологически чистые материалы</p>
           </li>
           <li class="odds__item">
-            <img class="odds__image" src="img/ruble.svg" alt="Рубль" width="47" height="27">
+            <img class="odds__icon" src="img/ruble.svg" alt="Рубль" width="47" height="27">
             <p>Скандинавский стиль по российской цене</p>
           </li>
           <li class="odds__item">
-            <img class="odds__image" src="img/heart.svg" alt="Сердце" width="34" height="27">
+            <img class="odds__icon" src="img/heart.svg" alt="Сердце" width="34" height="27">
             <p>Увеличивает лайки на фотографиях</p>
           </li>
           <li class="odds__item">
-            <img class="odds__image" src="img/roll.svg" alt="Клубок" width="35" height="34">
+            <img class="odds__icon" src="img/roll.svg" alt="Клубок" width="35" height="34">
             <p>Связано вручную с любовью и умилением</p>
           </li>
           <li class="odds__item">
-            <img class="odds__image" src="img/rocket.svg" alt="Рокета" width="55" height="23">
+            <img class="odds__icon" src="img/rocket.svg" alt="Рокета" width="55" height="23">
             <p>Поддержка отечественного производителя</p>
           </li>
           <li class="odds__item">
-            <img class="odds__image" src="img/present.svg" alt="Подарок" width="33" height="32">
+            <img class="odds__icon" src="img/present.svg" alt="Подарок" width="33" height="32">
             <p>Поставляется в подарочной упаковке</p>
           </li>
         </ul>
@@ -122,9 +126,9 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__socials socials">
+      <section class="page-footer__socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="socials__list">
+        <ul class="socials">
           <li class="socials__item">
             <a class="socials__link socials__link--instagram" href="http://www.instagram.com/mishkashop">
               <img src="img/instagram.svg" alt="Мы в инстаграме">
@@ -154,12 +158,15 @@
         <h2 class="modal__title">Добавить в корзину</h2>
         <form class="modal__size size-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="size-form__legend">Выберите размер:</p>
-          <input type="radio" name="size" value="S" id="s">
-          <label class="size-form__item" for="s">S</label>
-          <input type="radio" name="size" value="M">
-          <label class="size-form__item" for="m">M</label>
-          <input type="radio" name="size" value="L">
-          <label class="size-form__item" for="l">L</label>
+          <div class="size-form__wrapper">
+            <input class="size-form__checkbox" type="radio" name="size" value="S" id="s">
+            <label class="size-form__item" for="s">S</label>
+            <input class="size-form__checkbox" type="radio" name="size" value="M">
+            <label class="size-form__item" for="m">M</label>
+            <input class="size-form__checkbox" type="radio" name="size" value="L">
+            <label class="size-form__item" for="l">L</label>
+          </div>
+
         </form>
         <button class="button modal__button" type="button" name="size-button">Добавить</button>
       </div>
