@@ -1,12 +1,52 @@
-body {
-  font-family: "Open Sans", "Tahoma", sans-serif;
-}
-
 @import "mixins.less";
 @import "variables.less";
+
+body {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+
+  background: url("../img/mishka-index-mobile-menu.jpg") no-repeat 50% 0;
+  background-size: 322px;
+
+  padding-left: 1px;
+  padding-right: 1px;
+  margin: 0 auto;
+  width: @mobile-width;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: @tablet-width;
+
+    background: url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;
+    background-size: 772px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: @desktop-width;
+
+    background: url("../img/mishka-index-desktop.jpg") no-repeat 50% 0;
+    background-size: 1150px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @import "blocks/button.less";
 @import "blocks/page-header.less";
-@import "blocks/main-nav.less";
 @import "blocks/site-list.less";
 @import "blocks/user-list.less";
 @import "blocks/page-main.less";
