@@ -1,3 +1,8 @@
+.feedback {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .feedback__item {
   margin: 0;
   padding: 0;
@@ -9,6 +14,8 @@
   position: relative;
   display: block;
 
+  margin: 0;
+
   text-transform: uppercase;
 
   font-size: 17px;
@@ -18,15 +25,14 @@
 
   &::after {
     content: "";
-    width: 100%;
-    height: 1px;
-    color: @seafoam-blue;
-
     position: absolute;
+    z-index: -1;
+
+    width: 200px;
+
     border-bottom: 1px solid @seafoam-blue;
-    width: 90%;
     top:50%;
-    right: 20px;
+    left: 62px;
   }
 }
 
