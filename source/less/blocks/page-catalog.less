@@ -1,7 +1,26 @@
 .page-catalog__title {
+  margin: auto;
+
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
   color: @black-two;
+}
+
+.page-catalog__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  min-height: 180px;
+  background-color: @white-two;
+}
+
+@media (min-width: @tablet-width) {
+  .page-catalog__wrapper {
+    margin-bottom: 80px;
+  }
 }
