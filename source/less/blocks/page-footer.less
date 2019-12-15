@@ -21,19 +21,23 @@
   padding-right: 40px;
 }
 
+
+@media (max-width:calc(@tablet-width - 1px)) {
+  .page-footer__logo {
+    .visually-hidden();
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
-    padding-left: 313px;
+    padding-left: 50px;
     padding-right: 50px;
     padding-top: 58px;
     padding-bottom: 46px;
-
-    background: url("../img/logo-footer.svg") no-repeat 50px 50px;
-    background-origin: border-box;
   }
 
   .page-footer__socials {
