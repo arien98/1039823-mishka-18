@@ -4,6 +4,31 @@
 
   border-top: 1px solid @white-four;
   border-bottom: 1px solid @white-four;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: calc(@tablet-width - 100px);
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top: 1px solid @white-four;
+    border-bottom: 1px solid @white-four;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top: 1px solid @white-four;
+    border-bottom: 1px solid @white-four;
+  }
 }
 
 .page-header__logo {
@@ -14,23 +39,78 @@
   min-height: 79px;
 
   background: url("../img/logo-mobile.svg") no-repeat 50% 50%;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    min-height: 88px;
+    width: 120px;
+
+    background: url("../img/logo-tablet.svg") no-repeat 0 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+
+    width: 185px;
+    margin-right: 39px;
+    background: url("../img/logo-desktop.svg") no-repeat 0 50%;
+  }
+}
+
+.page-header__site-list {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    min-height: 88px;
+  }
+}
+
+.page-header__user-list {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    display: flex;
+
+    width: 350px;
+    min-height: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 3;
+    display: flex;
+
+    width: 350px;
+    min-height: 88px;
+  }
 }
 
 .page-header__shipment {
   font-size: 15px;
   line-height: 24px;
   font-weight: normal;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+
+    margin: 0;
+    margin-top: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 4;
+
+    margin: 0;
+    margin-top: 17px;
+  }
 }
 
-/*.page-header__site-list {
-  display: none;
-}
-
-.page-header__user-list {
-  display: none;
-}*/
-
-@media (max-width: @tablet-width) {
+@media (max-width: calc(@tablet-width - 1px)) {
   .page-header__logo::after {
     content: "";
     position: absolute;
@@ -52,104 +132,5 @@
     line-height: 24px;
     font-weight: normal;
     color: @greyish-brown;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .page-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    width: calc(@tablet-width - 100px);
-    padding-left: 50px;
-    padding-right: 50px;
-    border-top: 1px solid @white-four;
-    border-bottom: 1px solid @white-four;
-
-  }
-
-  .page-header__logo {
-    order: 1;
-
-    min-height: 88px;
-    width: 120px;
-
-    background: url("../img/logo-tablet.svg") no-repeat 0 50%;
-    outline: 1px solid green;
-  }
-
-  .page-header__site-list {
-    order: 3;
-
-    outline: 1px solid green;
-  }
-
-  .page-header__user-list {
-    order: 2;
-    display: flex;
-
-    width: 350px;
-    min-height: 88px;
-
-    outline: 1px solid green;
-  }
-
-  .page-header__shipment {
-    order: 4;
-
-    margin: 0;
-    margin-top: 17px;
-
-    outline: 1px solid green;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header {
-    justify-content: space-between;
-    align-items: flex-start;
-
-    width: calc(@desktop-width - 100px);
-    padding-left: 50px;
-    padding-right: 50px;
-    border-top: 1px solid @white-four;
-    border-bottom: 1px solid @white-four;
-
-  }
-
-  .page-header__logo {
-    order: 2;
-
-    width: 185px;
-
-    background: url("../img/logo-desktop.svg") no-repeat 0 50%;
-    outline: 1px solid green;
-  }
-
-  .page-header__site-list {
-    order: 1;
-    min-height: 88px;
-    outline: 1px solid green;
-  }
-
-  .page-header__user-list {
-    order: 3;
-    display: flex;
-
-    width: 350px;
-    min-height: 88px;
-
-    outline: 1px solid green;
-  }
-
-  .page-header__shipment {
-    order: 4;
-
-    margin: 0;
-    margin-top: 17px;
-
-    outline: 1px solid green;
   }
 }

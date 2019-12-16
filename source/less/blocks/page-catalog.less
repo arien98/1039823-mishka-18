@@ -13,14 +13,43 @@
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   min-height: 180px;
   background-color: @white-two;
 }
 
 @media (min-width: @tablet-width) {
+
   .page-catalog__wrapper {
-    margin-bottom: 80px;
+    position: relative;
+
+    margin-bottom: 82px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+
+      width: 100%;
+      height: 12px;
+      bottom: 0;
+      left: 0;
+
+      background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-catalog__wrapper {
+    min-height: 210px;
+    margin-bottom: 129px;
+
+    &::after {
+      content: "";
+      height: 15px;
+    }
   }
 }

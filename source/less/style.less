@@ -4,29 +4,24 @@
 body {
   font-family: "Open Sans", "Tahoma", sans-serif;
 
-  background: url("../img/mishka-form-mobile.jpg") no-repeat 50% 0;
-  background-size: 322px;
-
-  padding-left: 1px;
-  padding-right: 1px;
   margin: 0 auto;
   width: @mobile-width;
-}
 
-@media (min-width: @tablet-width) {
-  body {
-    width: @tablet-width;
+  background: url("../img/mishka-catalog-mobile.jpg") no-repeat 50% 0;
+  background-size: 320px;
 
-    background: url("../img/mishka-form-tablet.jpg") no-repeat 50% 0;
-    background-size: 772px;
+
+  @media (min-width: @tablet-width) {
+  width: @tablet-width;
+
+  background: url("../img/mishka-catalog-tablet.jpg") no-repeat 50% 0;
+  background-size: 772px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  body {
+  @media (min-width: @desktop-width) {
     width: @desktop-width;
 
-    background: url("../img/mishka-form-desktop.jpg") no-repeat 50% 0;
+    background: url("../img/mishka-catalog-desktop.jpg") no-repeat 50% 0;
     background-size: 1150px;
   }
 }
