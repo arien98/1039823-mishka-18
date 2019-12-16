@@ -1,8 +1,15 @@
 .multitype {
+  justify-content: space-between;
   margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 67px;
+    padding-bottom: 10px;
+  }
 }
 
 .multitype__legend {
+  margin-right: 200px;
   margin-bottom: 35px;
 }
 
@@ -10,13 +17,24 @@
   display: block;
 
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    margin-bottom: 54px;
+  }
 }
 
 .multitype__item {
 	position: relative;
   margin-left: 64px;
   margin-right: 40px;
+
 	cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 .multitype__item:before {
@@ -48,13 +66,9 @@
 	opacity: 1;
 }
 
-@media (min-width: @tablet-width) {
-  .multitype__block-wrapper {
+.multitype__block-wrapper {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .multitype__wrapper {
-    width: 260px;
   }
 }

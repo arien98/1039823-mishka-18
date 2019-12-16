@@ -1,6 +1,11 @@
 .feedback {
   margin-left: 28px;
   margin-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .feedback__item {
@@ -8,6 +13,22 @@
   padding: 0;
 
   border: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-left: 52px;
+    padding-right: 50px;
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(5) {
+      background-color: @white-two;
+    }
+
+    &--bottom {
+      justify-content: space-between;
+    }
+  }
 }
 
 .feedback__legend {
@@ -41,6 +62,19 @@
   &--add {
     margin-bottom: 24px;
   }
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    margin: 0;
+    padding: 0;
+    width: 167px;
+
+    background-color: transparent;
+
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .feedback__label {
@@ -48,6 +82,10 @@
   font-weight: bold;
   line-height: 18px;
   color: @black-two;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .feedback__field  {
@@ -91,6 +129,8 @@
   width: calc(100% - 8px);
   min-height: 136px;
 
+  font-family: inherit;
+
   background-color: transparent;
   border: solid 2px @greyish-brown;
 
@@ -104,6 +144,11 @@
     line-height: 18px;
     color: @greyish-brown-30;
   }
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    flex-grow: 1;
+  }
 }
 
 .feedback__caption {
@@ -113,6 +158,10 @@
   font-size: 14px;
   color: rgb(68, 68, 68);
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
 
 .feedback__button {
@@ -124,57 +173,8 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
-}
 
-@media (min-width: @tablet-width) {
-  .feedback {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
-  .feedback__legend {
-    position: static;
-    margin: 0;
-    padding: 0;
-    width: 167px;
-
-    background-color: transparent;
-
-    &::after {
-      content: none;
-    }
-  }
-
-  .feedback__item {
-    display: flex;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    &:nth-child(2),
-    &:nth-child(4),
-    &:nth-child(5) {
-      background-color: @white-two;
-    }
-
-    &--bottom {
-      justify-content: space-between;
-    }
-  }
-
-  .feedback__label {
-    font-size: 19px;
-  }
-
-  .feedback__frame {
-    width: auto;
-    flex-grow: 1;
-  }
-
-  .feedback__caption {
-    order: 2;
-  }
-
-  .feedback__button {
+  @media (min-width: @tablet-width) {
     width: 230px;
     margin-right: auto;
     order:1;

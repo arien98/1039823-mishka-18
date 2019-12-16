@@ -1,15 +1,38 @@
 .type {
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-bottom: 10px;
+  }
 }
 
 .type__legend {
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    padding-top: 3px;
+    width: 167px;
+  }
 }
 
 .type__wrapper {
   display: block;
 
   margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.type__block-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .type__item {
@@ -17,72 +40,54 @@
   margin-left: 64px;
   margin-right: 40px;
 	cursor: pointer;
-}
 
-.type__item:before {
-	content: '';
-	position: absolute;
-	top: -6px;
-	left: -62px;
-	width: 35px;
-	height: 35px;
+  &:before {
+    content: '';
+  	position: absolute;
+  	top: -6px;
+  	left: -62px;
+  	width: 35px;
+  	height: 35px;
 
-	border: 2px solid rgb(68, 68, 68);
-	border-radius: 50%;
-}
-
-.type__item:after {
-	content: '';
-	position: absolute;
-	top: 6px;
-	left: -50px;
-	width: 16px;
-	height: 16px;
-
-	border-radius: 50%;
-	background: #62d1ba;
-	opacity: 0;
-	transition: .2s;
-}
-
-.type__radio:checked + .type__item:after {
-	opacity: 1;
-}
-
-@media (min-width: @tablet-width) {
-  .type {
-    display: flex;
+  	border: 2px solid rgb(68, 68, 68);
+  	border-radius: 50%;
   }
 
-  .type__legend {
-    margin: 0;
-    padding: 0;
-    width: 167px;
+  &:after {
+    content: '';
+  	position: absolute;
+  	top: 6px;
+  	left: -50px;
+  	width: 16px;
+  	height: 16px;
 
-
+  	border-radius: 50%;
+  	background: #62d1ba;
+  	opacity: 0;
+  	transition: .2s;
   }
 
-  .type__block-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+  @media (min-width: @tablet-width) {
+    margin-left: 81px;
 
-  .type__item {
     &:before {
     	content: '';
-    	top: -6px;
-    	left: -62px;
-    	width: 35px;
-    	height: 35px;
+      top: -11px;
+      left: -81px;
+      width: 48px;
+      height: 48px;
     }
 
     &:after {
     	content: '';
-    	top: 6px;
-    	left: -50px;
-    	width: 16px;
-    	height: 16px;
+      top: 5px;
+      left: -65px;
+      width: 20px;
+      height: 20px;
     }
   }
+}
 
+.type__radio:checked + .type__item:after {
+	opacity: 1;
 }

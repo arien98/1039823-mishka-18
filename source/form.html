@@ -43,8 +43,8 @@
       </div>
       <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="feedback__item type">
-          <legend class="feedback__legend type__legend">Тип</legend>
+        <div class="feedback__item type">
+          <h2 class="feedback__legend type__legend">Тип</h2>
           <div class="type__block-wrapper">
             <div class="type__wrapper">
               <input class="visually-hidden type__radio" type="radio" name="type" value="accessorу" id="accessorу" checked>
@@ -55,9 +55,9 @@
               <label class="feedback__label type__item" for="toy">Детская игрушка</label>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="feedback__item multitype">
-          <legend class="feedback__legend multitype__legend">Цвет</legend>
+        </div>
+        <div class="feedback__item multitype">
+          <h2 class="feedback__legend multitype__legend">Цвет</h2>
           <div class="multitype__block-wrapper">
             <div class="multitype__wrapper">
               <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="white" id="white" checked>
@@ -84,9 +84,9 @@
               <label class="feedback__label multitype__item" for="orange">Оранжевый</label>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="feedback__item data">
-          <legend class="feedback__legend data__legend">ФИО</legend>
+        </div>
+        <div class="feedback__item data">
+          <h2 class="feedback__legend data__legend">ФИО</h2>
           <div class="data__block-wrapper">
             <div class="data__wrapper">
               <label class="feedback__label data__label" for="name">Имя:</label>
@@ -101,7 +101,7 @@
               <input class="feedback__field data__field" type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
             </div>
           </div>
-        </fieldset>
+        </div>
         <div class="feedback__item">
           <label class="feedback__legend" for="phone">Тел</label>
           <input class="feedback__field feedback__field--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
