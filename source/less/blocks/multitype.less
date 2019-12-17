@@ -25,11 +25,11 @@
 }
 
 .multitype__item {
-	position: relative;
+  position: relative;
   margin-left: 64px;
   margin-right: 40px;
 
-	cursor: pointer;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -38,32 +38,32 @@
 }
 
 .multitype__item:before {
-	content: '';
-	position: absolute;
-	top: -8px;
-	left: -62px;
-	width: 37px;
-	height: 36px;
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -62px;
+  width: 37px;
+  height: 36px;
 
-	border: 2px solid rgb(68, 68, 68);
+  border: 2px solid rgb(68, 68, 68);
 }
 
 .multitype__item:after {
-	content: '';
-	position: absolute;
-	top: 4px;
-	left: -54px;
-	width: 24px;
-	height: 17px;
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -54px;
+  width: 24px;
+  height: 17px;
 
-	background: url("../img/icon-tick.svg") no-repeat 0 0;
+  background: url("../img/icon-tick.svg") no-repeat 0 0;
   background-size: contain;
-	opacity: 0;
-	transition: .2s;
+  opacity: 0;
+  transition: .2s;
 }
 
 .multitype__checkbox:checked + .multitype__item:after {
-	opacity: 1;
+  opacity: 1;
 }
 
 .multitype__block-wrapper {
