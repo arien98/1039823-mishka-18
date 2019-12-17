@@ -46,7 +46,7 @@
   margin-right: 40px;
   cursor: pointer;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: -6px;
@@ -58,7 +58,7 @@
     border-radius: 50%;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 6px;
@@ -75,7 +75,7 @@
   @media (min-width: @tablet-width) {
     margin-left: 81px;
 
-    &:before {
+    &::before {
       content: "";
       top: -11px;
       left: -81px;
@@ -83,7 +83,7 @@
       height: 48px;
     }
 
-    &:after {
+    &::after {
       content: "";
       top: 5px;
       left: -65px;
@@ -93,6 +93,6 @@
   }
 }
 
-.type__radio:checked + .type__item:after {
+.type__radio:checked + .type__item::after {
   opacity: 1;
 }
