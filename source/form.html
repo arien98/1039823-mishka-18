@@ -43,78 +43,78 @@
       </div>
       <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback__item type">
-          <h2 class="feedback__legend type__legend">Тип</h2>
+        <div class="feedback__type type">
+          <h2 class="type__legend">Тип</h2>
           <div class="type__block-wrapper">
             <div class="type__wrapper">
               <input class="visually-hidden type__radio" type="radio" name="type" value="accessorу" id="accessorу" checked>
-              <label class="feedback__label type__item" for="accessorу">Аксессуар для интерьера</label>
+              <label class="type__item" for="accessorу">Аксессуар для интерьера</label>
             </div>
             <div class="type__wrapper">
               <input class="visually-hidden type__radio" type="radio" name="type" value="toy" id="toy">
-              <label class="feedback__label type__item" for="toy">Детская игрушка</label>
+              <label class="type__item" for="toy">Детская игрушка</label>
             </div>
           </div>
         </div>
-        <div class="feedback__item multitype">
-          <h2 class="feedback__legend multitype__legend">Цвет</h2>
+        <div class="feedback__multitype multitype">
+          <h2 class="multitype__legend">Цвет</h2>
           <div class="multitype__block-wrapper">
             <div class="multitype__wrapper">
               <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="white" id="white" checked>
-              <label class="feedback__label multitype__item" for="white">Белый</label>
+              <label class="multitype__item" for="white">Белый</label>
             </div>
             <div class="multitype__wrapper">
               <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="gray" id="gray" checked>
-              <label class="feedback__label multitype__item" for="gray">Серый</label>
+              <label class="multitype__item" for="gray">Серый</label>
             </div>
             <div class="multitype__wrapper">
               <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="Tiffany" id="Tiffany">
-              <label class="feedback__label multitype__item" for="Tiffany">«Тиффани»</label>
+              <label class="multitype__item" for="Tiffany">«Тиффани»</label>
             </div>
             <div class="multitype__wrapper">
               <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="black" id="black">
-              <label class="feedback__label multitype__item" for="black">Черный</label>
+              <label class="multitype__item" for="black">Черный</label>
             </div>
             <div class="multitype__wrapper">
               <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="pink" id="pink">
-              <label class="feedback__label multitype__item" for="pink">Розовый</label>
+              <label class="multitype__item" for="pink">Розовый</label>
             </div>
             <div class="multitype__wrapper">
               <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="orange" id="orange">
-              <label class="feedback__label multitype__item" for="orange">Оранжевый</label>
+              <label class="multitype__item" for="orange">Оранжевый</label>
             </div>
           </div>
         </div>
-        <div class="feedback__item data">
-          <h2 class="feedback__legend data__legend">ФИО</h2>
+        <div class="feedback__data data">
+          <h2 class="data__legend">ФИО</h2>
           <div class="data__block-wrapper">
             <div class="data__wrapper">
-              <label class="feedback__label data__label" for="name">Имя:</label>
-              <input class="feedback__field data__field" type="text" name="name" id="name" required placeholder="Введите ваше имя*">
+              <label class="data__label" for="name">Имя:</label>
+              <input class="data__field" type="text" name="name" id="name" required placeholder="Введите ваше имя*">
             </div>
             <div class="data__wrapper">
-              <label class="feedback__label data__label" for="last-name">Фамилия:</label>
-              <input class="feedback__field data__field" type="text" name="last-name" id="last-name" required placeholder="Укажите фамилию*">
+              <label class="data__label" for="last-name">Фамилия:</label>
+              <input class="data__field" type="text" name="last-name" id="last-name" required placeholder="Укажите фамилию*">
             </div>
             <div class="data__wrapper">
-              <label class="feedback__label data__label" for="fathers-name">Отчество:</label>
-              <input class="feedback__field data__field" type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
+              <label class="data__label" for="fathers-name">Отчество:</label>
+              <input class="data__field" type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
             </div>
           </div>
         </div>
-        <div class="feedback__item">
-          <label class="feedback__legend" for="phone">Тел</label>
-          <input class="feedback__field feedback__field--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <div class="feedback__phone">
+          <label class="feedback__phone-legend" for="phone">Тел</label>
+          <input class="feedback__phone-field" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </div>
-        <div class="feedback__item">
-          <label class="feedback__legend" for="e-mail">E-mail</label>
-          <input class="feedback__field feedback__field--email" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+        <div class="feedback__mail">
+          <label class="feedback__mail-legend" for="e-mail">E-mail</label>
+          <input class="feedback__mail-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
         </div>
-        <div class="feedback__item">
-          <label class="feedback__legend feedback__legend--add" for="additional">Доп</label>
+        <div class="feedback__additional">
+          <label class="feedback__additional-legend" for="additional">Доп</label>
           <textarea class="feedback__frame" name="additional" id="additional" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
-        <div class="feedback__item feedback__item--bottom">
+        <div class="feedback__bottom-wrapper">
           <small class="feedback__caption">*Поля обязательны для заполнения</small>
           <button class="button feedback__button" type="submit" name="feedback-button">Отправить заказ</button>
         </div>

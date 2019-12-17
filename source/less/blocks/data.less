@@ -1,12 +1,28 @@
 .data {
   margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    padding-left: 52px;
+    padding-top: 66px;
+  }
 }
 
 .data__legend {
+  .feedback__legend();
+
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    margin: 0;
+  }
 }
 
 .data__label {
+  .feedback__label();
+
   display: block;
   padding-left: 2px;
   padding-right: 2px;
@@ -21,17 +37,32 @@
 }
 
 .data__field {
+  .feedback__field();
+
   padding-left: 2px;
   padding-right: 2px;
   padding-bottom: 15px;
   margin-bottom: 24px;
   width: calc(100% - 4px);
 
-  background: transparent;
+  border: none;
+  box-shadow: inset 0px -2px 0 0px @black-two;
+  background-color: transparent;
+
+  &::placeholder {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 18px;
+    color: @greyish-brown-30;
+  }
 
   @media (min-width: @tablet-width) {
-    width:auto;
+    width: auto;
     flex-grow: 1;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 }
 
