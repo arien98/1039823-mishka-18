@@ -8,34 +8,166 @@
   }
 }
 
+.feedback__phone {
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    padding-left: 52px;
+    padding-right: 50px;
+    padding-top: 55px;
+
+    background-color: @white-two;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 111px;
+    padding-right: 225px;
+  }
+}
+
+.feedback__phone-legend {
+  .feedback__legend();
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 114px;
+  }
+}
+
 .feedback__phone-field {
   .feedback__field();
 
   margin-bottom: 30px;
-  padding-top: 16px;
-  padding-bottom: 19px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   width: 100%;
 
-  background: transparent url("../img/icon-phone.svg") no-repeat 230px 9px;
+  background: url("../img/icon-phone.svg") no-repeat 230px 9px;
 
   &::placeholder {
     font-size: 19px;
-    line-height: 0.95;
+    line-height: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 60px;
+    width: auto;
+    flex-grow: 1;
+
+    background-position: 450px 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 665px 6px;
   }
 }
 
-.feedback__email-field {
+.feedback__mail {
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    padding-left: 52px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+
+    background-color: @white-two;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 111px;
+    padding-right: 225px;
+  }
+}
+
+.feedback__mail-legend {
+  .feedback__legend();
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 114px;
+  }
+}
+
+.feedback__mail-field {
   .feedback__field();
 
-  margin-bottom: 33px;
-  padding-top: 16px;
+  margin-bottom: 30px;
+  padding-top: 22px;
   padding-bottom: 19px;
   width: 100%;
 
-  background: transparent url("../img/icon-mail.svg") no-repeat 228px 10px;
+  background: url("../img/icon-mail.svg") no-repeat 226px 14px;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 60px;
+    width: auto;
+    flex-grow: 1;
+
+    background-position: 448px 6px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 665px 6px;
+  }
+}
+
+.feedback__additional {
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    padding-left: 52px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 111px;
+    padding-right: 225px;
+    padding-bottom: 50px;
+  }
+}
+
+.feedback__additional-legend {
+  .feedback__legend();
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+    margin-right: 128px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 75px;
+  }
 }
 
 .feedback__frame {
+  margin-top: 20px;
   margin-bottom: 9px;
   width: calc(100% - 8px);
   min-height: 136px;
@@ -59,12 +191,29 @@
   @media (min-width: @tablet-width) {
     width: auto;
     flex-grow: 1;
+    margin: 0;
+    padding: 0;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 }
 
 .feedback__bottom-wrapper {
   @media (min-width: @tablet-width) {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
 
@@ -78,6 +227,12 @@
 
   @media (min-width: @tablet-width) {
     order: 2;
+
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
@@ -85,15 +240,18 @@
   display: block;
   width: 100%;
   height: 52px;
-  margin-bottom: 57px;
+  margin-bottom: 55px;
 
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
 
   @media (min-width: @tablet-width) {
-    width: 230px;
-    margin-right: auto;
     order: 1;
+
+    width: 230px;
+    margin: 0;
+    margin-right: auto;
+    padding-right: 10px;
   }
 }
