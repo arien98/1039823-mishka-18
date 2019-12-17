@@ -4,100 +4,142 @@
     <meta сharset="utf-8">
     <title>Вязание на заказ – HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html"><img class="page-header__logo-pic" src="img/logo.svg" alt="Магазин Мишка" width="86" height="35"></a>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+      <a class="page-header__logo" href="index.html"></a>
+          <ul class="page-header__site-list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a>Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="search.html">Поиск по сайту</a>
+          <ul class="page-header__user-list user-list">
+            <li class="user-list__item user-list__item--search">
+              <a class="user-list__link" href="search.html">
+                <svg class="user-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                  <path fill="#d1d0ce" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+                </svg>
+                <p class="user-list__text user-list__text--searh">Поиск по сайту</p>
+              </a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="bin.html">Корзина: пока пуста</a>
+            <li class="user-list__item user-list__item--bin">
+              <a class="user-list__link" href="bin.html">
+                <svg class="user-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                  <path fill="#d1d0ce" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+                </svg>
+              <p class="user-list__text">Корзина: пока пуста</p>
+            </a>
             </li>
           </ul>
-        </div>
-      </nav>
+      <p class="page-header__shipment">Бесплатная доставка по России</p>
     </header>
     <main class="page-form">
-      <h1 class="page-form__title">Вязание на заказ</h1>
+      <div class="page-form__wrapper">
+        <h1 class="page-form__title">Вязание на заказ</h1>
+      </div>
       <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="feedback__item type">
-          <legend class="feedback__legend type__legend">Тип</legend>
-          <input class="visually-hidden" type="radio" name="type" value="accessorу" id="accessorу" checked>
-          <label class="feedback__label type__item" for="accessorу">Аксессуар для интерьера</label>
-          <input class="visually-hidden" type="radio" name="type" value="toy" id="toy">
-          <label class="feedback__label type__item" for="toy">Детская игрушка</label>
-        </fieldset>
-        <fieldset class="feedback__item multitype">
-          <legend class="feedback__legend multitype__legend">Цвет</legend>
-          <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="white" id="white" checked>
-          <label class="feedback__label multitype__item" for="white">Белый</label>
-          <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="gray" id="gray" checked>
-          <label class="feedback__label multitype__item" for="gray">Серый</label>
-          <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="Tiffany" id="Tiffany">
-          <label class="feedback__label multitype__item" for="Tiffany">"Тиффани"</label>
-          <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="black" id="black">
-          <label class="feedback__label multitype__item" for="black">Черный</label>
-          <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="pink" id="pink">
-          <label class="feedback__label multitype__item" for="pink">Розовый</label>
-          <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="orange" id="orange">
-          <label class="feedback__label multitype__item" for="orange">Оранжевый</label>
-        </fieldset>
-        <fieldset class="feedback__item data">
-          <legend class="feedback__legend data__legend">ФИО</legend>
-          <label class="feedback__label data__label" for="name">Имя:</label>
-          <input class="feedback__field data__field" type="text" name="name" id="name" required placeholder="Введите ваше имя*">
-          <label class="feedback__label data__label" for="last-name">Фамилия:</label>
-          <input class="feedback__field data__field" type="text" name="last-name" id="last-name" required placeholder="Укажите фамилию*">
-          <label class="feedback__label data__label" for="fathers-name">Отчество:</label>
-          <input class="feedback__field data__field" type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
-        </fieldset>
-        <div class="feedback__item">
-          <label class="feedback__legend" for="phone">Тел</label>
-          <input class="feedback__field feedback__field--phone phone-field" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <div class="feedback__type type">
+          <h2 class="type__legend">Тип</h2>
+          <div class="type__block-wrapper">
+            <div class="type__wrapper">
+              <input class="visually-hidden type__radio" type="radio" name="type" value="accessorу" id="accessorу" checked>
+              <label class="type__item" for="accessorу">Аксессуар для интерьера</label>
+            </div>
+            <div class="type__wrapper">
+              <input class="visually-hidden type__radio" type="radio" name="type" value="toy" id="toy">
+              <label class="type__item" for="toy">Детская игрушка</label>
+            </div>
+          </div>
         </div>
-        <div class="feedback__item">
-          <label class="feedback__legend" for="e-mail">E-mail</label>
-          <input class="feedback__field email-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+        <div class="feedback__multitype multitype">
+          <h2 class="multitype__legend">Цвет</h2>
+          <div class="multitype__block-wrapper">
+            <div class="multitype__wrapper">
+              <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="white" id="white" checked>
+              <label class="multitype__item" for="white">Белый</label>
+            </div>
+            <div class="multitype__wrapper">
+              <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="gray" id="gray" checked>
+              <label class="multitype__item" for="gray">Серый</label>
+            </div>
+            <div class="multitype__wrapper">
+              <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="Tiffany" id="Tiffany">
+              <label class="multitype__item" for="Tiffany">«Тиффани»</label>
+            </div>
+            <div class="multitype__wrapper">
+              <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="black" id="black">
+              <label class="multitype__item" for="black">Черный</label>
+            </div>
+            <div class="multitype__wrapper">
+              <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="pink" id="pink">
+              <label class="multitype__item" for="pink">Розовый</label>
+            </div>
+            <div class="multitype__wrapper">
+              <input class="visually-hidden multitype__checkbox" type="checkbox" name="color" value="orange" id="orange">
+              <label class="multitype__item" for="orange">Оранжевый</label>
+            </div>
+          </div>
         </div>
-        <div class="feedback__item">
-          <label class="feedback__legend" for="additional">Доп</label>
-          <textarea class="feedback__field--frame" name="additional" id="additional" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <div class="feedback__data data">
+          <h2 class="data__legend">ФИО</h2>
+          <div class="data__block-wrapper">
+            <div class="data__wrapper">
+              <label class="data__label" for="name">Имя:</label>
+              <input class="data__field" type="text" name="name" id="name" required placeholder="Введите ваше имя*">
+            </div>
+            <div class="data__wrapper">
+              <label class="data__label" for="last-name">Фамилия:</label>
+              <input class="data__field" type="text" name="last-name" id="last-name" required placeholder="Укажите фамилию*">
+            </div>
+            <div class="data__wrapper">
+              <label class="data__label" for="fathers-name">Отчество:</label>
+              <input class="data__field" type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+        </div>
+        <div class="feedback__phone">
+          <label class="feedback__phone-legend" for="phone">Тел</label>
+          <input class="feedback__phone-field" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </div>
+        <div class="feedback__mail">
+          <label class="feedback__mail-legend" for="e-mail">E-mail</label>
+          <input class="feedback__mail-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+        </div>
+        <div class="feedback__additional">
+          <label class="feedback__additional-legend" for="additional">Доп</label>
+          <textarea class="feedback__frame" name="additional" id="additional" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+        <div class="feedback__bottom-wrapper">
           <small class="feedback__caption">*Поля обязательны для заполнения</small>
+          <button class="button feedback__button" type="submit" name="feedback-button">Отправить заказ</button>
         </div>
-        <button class="button feedback__button" type="submit" name="feedback-button">Отправить заказ</button>
       </form>
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img src="img/logo-footer.svg" alt="Логотип Магазин Мишка" width="102" height="34">
+      </a>
       <section class="page-footer__socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="socials">
           <li class="socials__item">
             <a class="socials__link socials__link--instagram" href="http://www.instagram.com/mishkashop">
-              <img src="img/instagram.svg" alt="Мы в инстаграме">
+              <img src="img/icon-insta.svg" alt="Мы в Инстаграме" width="22" height="21">
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--facebook" href="http://www.facebook.com/mishkashop">
-              <img src="img/vk.svg" alt="Мы во ВКонтекте">
+              <img src="img/icon-fb.svg" alt="Мы в Фэйсбуке" width="15" height="28">
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--twitter" href="http://www.twitter.com/mishkashop">
-              <img src="img/twitter.svg" alt="Мы в Твиттере">
+              <img src="img/icon-twitter.svg" alt="Мы в Твиттере" width="23" height="20">
             </a>
           </li>
         </ul>
@@ -105,7 +147,7 @@
       <section class="page-footer__copyright copyright">
         <h2 class="copyright__head">Разработано</h2>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-small.svg" alt="HTML academy" width="27" height="34">
+          <img src="img/logo-htmlacademy.svg" alt="HTML academy" width="27" height="34">
         </a>
       </section>
     </footer>

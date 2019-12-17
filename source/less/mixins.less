@@ -3,3 +3,57 @@
   margin: 0;
   padding: 0;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.feedback__legend() {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @seafoam-blue;
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+
+      width: 200px;
+
+      border-bottom: 1px solid @seafoam-blue;
+      top: 50%;
+      left: 62px;
+    }
+  }
+}
+
+.feedback__label() {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: @black-two;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
+}
+
+.feedback__field() {
+  border: none;
+  box-shadow: inset 0 -2px 0 0 @black-two;
+  background-color: transparent;
+}

@@ -1,7 +1,62 @@
 .page-catalog__title {
+  margin: auto;
+  padding-bottom: 6px;
+
   font-size: 27px;
   font-weight: bold;
-  line-height: 1.11;
+  line-height: 30px;
   text-align: center;
   color: @black-two;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.page-catalog__wrapper {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 28px;
+  min-height: 175px;
+
+  background-color: @white-two;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    margin-top: -45px;
+    margin-bottom: 77px;
+    min-height: 228px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+
+      width: 100%;
+      height: 15px;
+      bottom: 0;
+      left: 0;
+
+      background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 250px;
+    margin-bottom: 134px;
+    margin-top: -45px;
+  }
 }

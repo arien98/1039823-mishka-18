@@ -1,20 +1,164 @@
 .odds {
+  margin-bottom: 56px;
+
   font-weight: bold;
   color: black;
 }
 
 .odds__title {
+  margin: 0;
+  margin-left: 28px;
+  margin-bottom: 32px;
+
   font-size: 25px;
-  line-height: 1.2;
+  line-height: 30px;
 }
 
-.odds__item {
+.odds__list {
   .no-list;
 
   font-size: 17px;
-  line-height: 1.8;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.odds__item {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 28px;
+  padding-top: 54px;
+
+  background-origin: border-box;
+
+  &:nth-of-type(1) {
+    background: url("../img/icon-feature-flower.svg") no-repeat 38px 0;
+  }
+
+  &:nth-of-type(2) {
+    background: url("../img/icon-feature-money.svg") no-repeat 31px 0;
+  }
+
+  &:nth-of-type(3) {
+    background: url("../img/icon-feature-heart.svg") no-repeat 38px 4px;
+  }
+
+  &:nth-of-type(4) {
+    background: url("../img/icon-feature-ball.svg") no-repeat 33px 2px;
+  }
+
+  &:nth-of-type(5) {
+    background: url("../img/icon-feature-rocket.svg") no-repeat 23px 3px;
+  }
+
+  &:nth-of-type(6) {
+    background: url("../img/icon-feature-gift.svg") no-repeat 33px 0;
+  }
 }
 
 .odds__icon {
   display: block;
+  margin-left: 10px;
+  margin-bottom: 17px;
+}
+
+.odds__text {
+  margin: 0;
+
+  &--new-line {
+    display: block;
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .odds {
+    margin-bottom: 24px;
+  }
+
+  .odds__title {
+    margin-left: 46px;
+    margin-bottom: 50px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .odds__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 470px;
+
+    margin-left: 40px;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+
+  .odds__item {
+    margin: 0;
+    margin-bottom: 59px;
+    padding-left: 10px;
+    padding-top: 54px;
+
+    &:nth-of-type(1) {
+      background: url("../img/icon-feature-flower.svg") no-repeat 19px 0;
+    }
+
+    &:nth-of-type(2) {
+      background: url("../img/icon-feature-money.svg") no-repeat 12px 1px;
+    }
+
+    &:nth-of-type(3) {
+      background: url("../img/icon-feature-heart.svg") no-repeat 18px 6px;
+    }
+
+    &:nth-of-type(4) {
+      background: url("../img/icon-feature-ball.svg") no-repeat 13px 3px;
+    }
+
+    &:nth-of-type(5) {
+      background: url("../img/icon-feature-rocket.svg") no-repeat 5px 3px;
+    }
+
+    &:nth-of-type(6) {
+      background: url("../img/icon-feature-gift.svg") no-repeat 13px 2px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .odds {
+    margin-bottom: 29px;
+  }
+
+  .odds__title {
+    margin-left: 221px;
+    margin-bottom: 49px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .odds__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 470px;
+
+    margin-left: 214px;
+    margin-right: 175px;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+
+  .odds__item {
+    margin: 0;
+    margin-bottom: 59px;
+    padding-left: 10px;
+    padding-top: 54px;
+  }
 }

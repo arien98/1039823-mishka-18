@@ -1,12 +1,37 @@
-body {
-  font-family: "Open Sans", "Tahoma", sans-serif;
-}
-
 @import "mixins.less";
 @import "variables.less";
+
+body {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+
+  margin: 0 auto;
+  width: @mobile-width;
+
+  /*background: url("../img/mishka-index-mobile.jpg") no-repeat 50% 0;
+  background-size: 320px;*/
+
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+
+    /*background: url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;
+    background-size: 772px;*/
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+
+    /*background: url("../img/mishka-index-desktop.jpg") no-repeat 50% 0;
+    background-size: 1150px;*/
+  }
+}
+
+.visually-hidden {
+  .visually-hidden();
+}
+
 @import "blocks/button.less";
 @import "blocks/page-header.less";
-@import "blocks/main-nav.less";
 @import "blocks/site-list.less";
 @import "blocks/user-list.less";
 @import "blocks/page-main.less";
@@ -27,3 +52,6 @@ body {
 @import "blocks/production.less";
 @import "blocks/page-form.less";
 @import "blocks/feedback.less";
+@import "blocks/type.less";
+@import "blocks/multitype.less";
+@import "blocks/data.less";
