@@ -41,12 +41,8 @@
 
     &::after {
       content: "";
-
-      &::after {
-        content: "";
-        top: 384px;
-        left: 366px;
-      }
+      top: 146px;
+      left: 593px;
     }
   }
 }
@@ -148,8 +144,20 @@
   margin: 0;
   width: calc(100% - 78px);
 
-  &--underlined {
+  &--email {
     border-bottom: 1px solid #3bb09d;
+  }
+
+  &--email:hover,
+  &--email:focus {
+    color: #46c1ae;
+    cursor: pointer;
+  }
+
+  &--email:active {
+    color: rgba(70, 193, 174, 0.3);
+    border-bottom: 1px solid rgba(70, 193, 174, 0.3);
+    cursor: pointer;
   }
 
   &--new-line {
@@ -163,6 +171,8 @@
 }
 
 .contacts__map {
+  z-index: 6;
+
   margin-left: -30px;
   margin-bottom: 34px;
 

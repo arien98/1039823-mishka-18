@@ -3,9 +3,23 @@
   text-align: center;
   vertical-align: middle;
 
+  color: @greyish-brown;
   text-transform: uppercase;
   text-decoration: none;
 
   border: 2px solid @greyish-brown;
   background-color: white;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: white;
+    background-color: @greyish-brown;
+  }
+
+  &:active {
+    outline: none;
+    color: @white-30;
+    background-color: @greyish-brown;
+  }
 }

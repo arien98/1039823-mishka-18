@@ -9,68 +9,96 @@
     margin-top: -119px;
     min-height: 119px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -134px;
+  }
 }
 
 .links__item {
-  margin: 0;
-  padding-top: 26px;
-  padding-left: 28px;
-  min-height: 77px;
-
-  font-size: 19px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 24px;
-  text-align: left;
-
-  &:nth-of-type(1) {
-    background: @seafoam-blue url("../img/icon-interior.svg") no-repeat 88% 50%;
-  }
-
-  &:nth-of-type(2) {
-    background: @greeny-blue url("../img/icon-toy.svg") no-repeat 90% 50%;
-  }
-
   @media (min-width: @tablet-width) {
     width: 50%;
-    padding-left: 35px;
-    min-height: 92px;
-
-    font-size: 20px;
-    line-height: 30px;
-
-    &:nth-of-type(1) {
-      background-position: 257px 29px;
-    }
-
-    &:nth-of-type(2) {
-      background-position: 241px 30px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 50%;
-    padding-left: 35px;
-    min-height: 74px;
-
-    font-size: 20px;
-    line-height: 30px;
-
-    &:nth-of-type(1) {
-      background-position: 447px 29px;
-    }
-
-    &:nth-of-type(2) {
-      background-position: 430px 31px;
-    }
   }
 }
 
 .links__link {
   display: block;
-  width: 110px;
-  color: inherit;
+  width: 100%;
+  margin: 0;
+  padding-top: 26px;
+  padding-left: 28px;
+  padding-right: 150px;
+  min-height: 103px;
+  box-sizing: border-box;
+
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: left;
   text-decoration: none;
+
+  &--interior {
+    background: @seafoam-blue url("../img/icon-interior.svg") no-repeat 88% 50%;
+  }
+
+  &--toys {
+    background: @greeny-blue url("../img/icon-toy.svg") no-repeat 90% 50%;
+  }
+
+  &--interior:hover,
+  &--interior:focus {
+    min-height: 108px;
+    background-color: #59d5bc;
+    transform: translateY(-5px);
+  }
+
+  &--toys:hover,
+  &--toys:focus {
+    min-height: 108px;
+    background-color: #46c1ae;
+    transform: translateY(-5px);
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 119px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &--interior {
+      background-position: 257px 29px;
+    }
+
+    &--toys {
+      background-position: 241px 30px;
+    }
+
+    &--interior:hover,
+    &--interior:focus {
+      min-height: 124px;
+    }
+
+    &--toys:hover,
+    &--toys:focus {
+      min-height: 124px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &--interior {
+      background-position: 447px 29px;
+    }
+
+    &--toys {
+      background-position: 430px 31px;
+    }
+  }
 }
 
 .links__icon {

@@ -53,6 +53,15 @@
 
   background: url("../img/logo-mobile.svg") no-repeat 50% 50%;
 
+  &:not(.on-page):hover,
+  &:not(.on-page):focus {
+    opacity: 0.6;
+  }
+
+  &:not(.on-page):active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     order: 1;
     min-height: 88px;
