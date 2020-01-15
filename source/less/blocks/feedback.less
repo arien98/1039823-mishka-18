@@ -19,6 +19,10 @@
     padding-top: 55px;
 
     background-color: @white-two;
+
+    &--mail {
+      padding-top: 0;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -77,25 +81,25 @@
   }
 
   @media (min-width: @tablet-width) {
-    /*margin-bottom: 30px;
-    padding-top: 16px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 13px;
     padding-left: 15px;
-    padding-right: 60px;*/
+    padding-right: 60px;
     width: auto;
     flex-grow: 1;
-
-    background-position: 450px 8px;
 
     &--mail {
       &::placeholder {
         font-size: 19px;
       }
+
+      margin-bottom: 49px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-position: 665px 6px;
+    padding-top: 11px;
+    padding-bottom: 15px;
   }
 }
 
@@ -104,61 +108,25 @@
   top: 35px;
   right: 10px;
   opacity: 0.2;
-}
-
-.feedback__mail {
-  @media (min-width: @tablet-width) {
-    display: flex;
-
-    padding-left: 52px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-
-    background-color: @white-two;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 111px;
-    padding-right: 225px;
-  }
-}
-
-.feedback__mail-legend {
-  .feedback__legend();
 
   @media (min-width: @tablet-width) {
-    width: 167px;
-    margin-top: 12px;
-  }
+    top: 63px;
+    right: 76px;
 
-  @media (min-width: @desktop-width) {
-    width: 114px;
-  }
-}
-
-.feedback__mail-field {
-  .feedback__field();
-
-  margin-bottom: 30px;
-  padding-top: 22px;
-  padding-bottom: 19px;
-  width: 100%;
-
-  background: url("../img/icon-mail.svg") no-repeat 226px 14px;
-
-  &::placeholder {
-    font-size: 17px;
-    line-height: 18px;
-  }
-
-  @media (min-width: @tablet-width) {
-    &::placeholder {
-      font-size: 19px;
+    &--mail {
+      top: 6px;
+      right: 72px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-position: 665px 6px;
+    top: 60px;
+    right: 233px;
+
+    &--mail {
+      top: 5px;
+      right: 229px;
+    }
   }
 }
 
@@ -173,6 +141,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 52px;
     padding-left: 111px;
     padding-right: 225px;
     padding-bottom: 50px;
@@ -218,7 +187,8 @@
   }
 
   &::placeholder {
-
+    padding-top: 13px;
+    padding-left: 15px;
     padding-right: 50px;
 
     font-size: 17px;
