@@ -8,42 +8,183 @@
   }
 }
 
-.feedback__phone-field {
-  .feedback__field();
+.form__item {
+  position: relative;
 
-  margin-bottom: 30px;
-  padding-top: 16px;
-  padding-bottom: 19px;
-  width: 100%;
+  @media (min-width: @tablet-width) {
+    display: flex;
 
-  background: transparent url("../img/icon-phone.svg") no-repeat 230px 9px;
+    padding-left: 52px;
+    padding-right: 50px;
+    padding-top: 55px;
 
-  &::placeholder {
-    font-size: 19px;
-    line-height: 0.95;
+    background-color: @white-two;
+
+    &--mail {
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 111px;
+    padding-right: 225px;
   }
 }
 
-.feedback__email-field {
+.form__legend {
+  .feedback__legend();
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 114px;
+  }
+}
+
+.form__field {
   .feedback__field();
 
-  margin-bottom: 33px;
-  padding-top: 16px;
-  padding-bottom: 19px;
+  margin-bottom: 30px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
+  padding-right: 60px;
   width: 100%;
+  box-sizing: border-box;
 
-  background: transparent url("../img/icon-mail.svg") no-repeat 228px 10px;
+  &--phone {
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+      color: @greyish-brown-30;
+    }
+  }
+
+  &--mail {
+    &::placeholder {
+      font-size: 17px;
+      line-height: 18px;
+      color: @greyish-brown-30;
+    }
+  }
+
+  &:hover + .form__icon,
+  &:focus + .form__icon {
+    opacity: 1;
+
+    path {
+      fill: @seafoam-blue;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 60px;
+    width: auto;
+    flex-grow: 1;
+
+    &--mail {
+      &::placeholder {
+        font-size: 19px;
+      }
+
+      margin-bottom: 49px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 11px;
+    padding-bottom: 15px;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  opacity: 0.2;
+
+  @media (min-width: @tablet-width) {
+    top: 63px;
+    right: 76px;
+
+    &--mail {
+      top: 6px;
+      right: 72px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 60px;
+    right: 233px;
+
+    &--mail {
+      top: 5px;
+      right: 229px;
+    }
+  }
+}
+
+.feedback__additional {
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    padding-left: 52px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 52px;
+    padding-left: 111px;
+    padding-right: 225px;
+    padding-bottom: 50px;
+  }
+}
+
+.feedback__additional-legend {
+  .feedback__legend();
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+    margin-right: 128px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 75px;
+  }
 }
 
 .feedback__frame {
+  margin-top: 20px;
   margin-bottom: 9px;
+  padding-top: 13px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
   width: calc(100% - 8px);
   min-height: 136px;
 
   font-family: inherit;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #444444;
 
   background-color: transparent;
   border: solid 2px @greyish-brown;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: solid 2px @seafoam-blue;
+  }
 
   &::placeholder {
     padding-top: 13px;
@@ -59,12 +200,29 @@
   @media (min-width: @tablet-width) {
     width: auto;
     flex-grow: 1;
+    margin: 0;
+    padding: 0;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 }
 
 .feedback__bottom-wrapper {
   @media (min-width: @tablet-width) {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
 
@@ -78,6 +236,12 @@
 
   @media (min-width: @tablet-width) {
     order: 2;
+
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
@@ -85,15 +249,18 @@
   display: block;
   width: 100%;
   height: 52px;
-  margin-bottom: 57px;
+  margin-bottom: 55px;
 
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
 
   @media (min-width: @tablet-width) {
-    width: 230px;
-    margin-right: auto;
     order: 1;
+
+    width: 230px;
+    margin: 0;
+    margin-right: auto;
+    padding-right: 10px;
   }
 }

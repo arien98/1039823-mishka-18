@@ -1,4 +1,5 @@
 .production {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -61,24 +62,9 @@
 }
 
 .production__video {
-  position: relative;
-
   width: 260px;
   height: 150px;
   background: url("../img/video-mobile@1x.jpg") no-repeat 0 0;
-
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-
-    width: 101px;
-    height: 77px;
-    top: 50%;
-    left: 50%;
-
-    background: url("../img/icon-play.svg") no-repeat 0 0;
-  }
 
   @media (min-width: @tablet-width) {
     order: 1;
@@ -94,6 +80,68 @@
     width: 682px;
     height: 455px;
     background: url("../img/video-desktop@1x.jpg") no-repeat 0 0;
+  }
+}
+
+.production__video-button {
+  position: absolute;
+  z-index: 1;
+
+  padding: 0;
+  width: 101px;
+  height: 77px;
+  top: 133px;
+  left: 80px;
+
+  box-sizing: content-box;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    width: 121px;
+    height: 92px;
+    top: 127px;
+    left: 70px;
+
+    svg {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    svg {
+      transform: scale(0.8);
+
+      path {
+        fill: #d0f1ea;
+      }
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 189px;
+    left: 283px;
+
+    &:hover,
+    &:focus {
+      top: 183px;
+      left: 273px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 190px;
+    left: 291px;
+
+    &:hover,
+    &:focus {
+      top: 184px;
+      left: 281px;
+    }
   }
 }
 
