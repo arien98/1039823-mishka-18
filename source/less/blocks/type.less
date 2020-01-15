@@ -70,7 +70,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 5.5px;
     left: -50px;
     width: 16px;
     height: 16px;
@@ -79,6 +79,19 @@
     background: #62d1ba;
     opacity: 0;
     transition: 0.2s;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 2px solid @seafoam-blue;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid @white-two;
+    }
   }
 
   @media (min-width: @tablet-width) {

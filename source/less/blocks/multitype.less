@@ -95,6 +95,19 @@
     border: 2px solid rgb(68, 68, 68);
   }
 
+  &:hover,
+  &:focus {
+    &::before {
+      border: 2px solid @seafoam-blue;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid @white-two;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-left: auto;

@@ -8,7 +8,9 @@
   }
 }
 
-.feedback__phone {
+.form__item {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     display: flex;
 
@@ -25,7 +27,7 @@
   }
 }
 
-.feedback__phone-legend {
+.form__legend {
   .feedback__legend();
 
   @media (min-width: @tablet-width) {
@@ -38,36 +40,70 @@
   }
 }
 
-.feedback__phone-field {
+.form__field {
   .feedback__field();
 
   margin-bottom: 30px;
   padding-top: 18px;
   padding-bottom: 18px;
+  padding-left: 18px;
+  padding-right: 60px;
   width: 100%;
+  box-sizing: border-box;
 
-  background: url("../img/icon-phone.svg") no-repeat 230px 9px;
-
-  &::placeholder {
-    font-size: 19px;
-    line-height: 18px;
+  &--phone {
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+      color: @greyish-brown-30;
+    }
   }
 
+  &--mail {
+    &::placeholder {
+      font-size: 17px;
+      line-height: 18px;
+      color: @greyish-brown-30;
+    }
+  }
+
+  &:hover + .form__icon,
+  &:focus + .form__icon {
+    opacity: 1;
+    path {
+      fill: @seafoam-blue;
+    }
+   }
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;
     padding-top: 16px;
     padding-bottom: 15px;
     padding-left: 15px;
-    padding-right: 60px;
+    padding-right: 60px;*/
     width: auto;
     flex-grow: 1;
 
     background-position: 450px 8px;
+
+    &--mail {
+      &::placeholder {
+        font-size: 19px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-position: 665px 6px;
   }
+}
+
+.form__icon {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  opacity: 0.2;
+
 }
 
 .feedback__mail {
@@ -116,16 +152,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 60px;
-    width: auto;
-    flex-grow: 1;
-
-    background-position: 448px 6px;
-
     &::placeholder {
       font-size: 19px;
     }
@@ -169,17 +195,30 @@
 .feedback__frame {
   margin-top: 20px;
   margin-bottom: 9px;
+  padding-top: 13px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
   width: calc(100% - 8px);
   min-height: 136px;
 
   font-family: inherit;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #444444;
 
   background-color: transparent;
   border: solid 2px @greyish-brown;
 
+  &:hover,
+  &:focus,
+  &:active {
+    border: solid 2px @seafoam-blue;
+  }
+
   &::placeholder {
-    padding-top: 13px;
-    padding-left: 15px;
+
     padding-right: 50px;
 
     font-size: 17px;

@@ -21,13 +21,18 @@
 }
 
 .page-footer__logo {
-  &:not(.on-page):hover,
-  &:not(.on-page):focus {
-    opacity: 0.6;
+  &:not(.on-page):hover svg,
+  &:not(.on-page):focus svg {
+    path {
+      fill: #46c1ae;
+    }
   }
 
-  &:not(.on-page):active {
+  &:not(.on-page):active svg {
     opacity: 0.3;
+    path {
+      fill: #46c1ae;
+    }
   }
 
   @media (max-width: calc(@tablet-width - 1px)) {

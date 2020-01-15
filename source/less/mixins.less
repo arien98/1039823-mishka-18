@@ -53,7 +53,21 @@
 }
 
 .feedback__field() {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #444444;
+
   border: none;
   box-shadow: inset 0 -2px 0 0 @black-two;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px -2px 0 0 @seafoam-blue;
+  }
+
+  &:active {
+    box-shadow: inset 0px -2px 0 0 @seafoam-blue;
+  }
 }

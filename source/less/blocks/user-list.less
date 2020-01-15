@@ -25,22 +25,6 @@
   width: 75px;
   transform: translate(3px, 4px);
 
-  &:hover,
-  &:focus {
-    path {
-      fill: @seafoam-blue;
-    }
-    outline: none;
-  }
-
-  &:active {
-    path {
-      fill: @seafoam-blue;
-    }
-    opacity: 0.3;
-    outline: none;
-  }
-
   @media (min-width: @tablet-width) {
     margin: 0;
     width: 82px;
@@ -67,11 +51,19 @@
   &:focus {
     color: @black-60;
     outline: none;
+
+    svg path {
+      fill: @seafoam-blue;
+    }
   }
 
   &:active {
     color: @black-30;
     outline: none;
+
+    svg path {
+      fill: @seafoam-blue;
+    }
   }
 
   @media (min-width: @tablet-width) {
