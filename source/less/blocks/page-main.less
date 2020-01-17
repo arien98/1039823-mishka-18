@@ -6,10 +6,10 @@
   min-height: 488px;
 
   background: rgb(250, 250, 250) url("../img/hero-mobile@1x.jpg") no-repeat 50% -19px;
+  background-size: cover;
 
   @media (min-resolution: @retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: cover;
   }
 
   @media (min-width: @tablet-width) {
@@ -61,7 +61,7 @@
 
   padding: 0 30px;
   padding-top: 69px;
-  margin-bottom: 123px;
+  margin-bottom: 118px;
 
   font-size: 27px;
   line-height: 30px;
@@ -84,10 +84,6 @@
     &--new-line {
       display: inline;
     }
-
-    &--break {
-      display: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -101,4 +97,8 @@
       display: inline;
     }
   }
+}
+
+.page-title__break {
+  display: none;
 }
