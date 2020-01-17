@@ -50,7 +50,6 @@
   margin-bottom: 30px;
   padding-top: 18px;
   padding-bottom: 18px;
-  padding-left: 18px;
   padding-right: 60px;
   width: 100%;
   box-sizing: border-box;
@@ -81,8 +80,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 15px;
-    padding-bottom: 13px;
+    padding-top: 13px;
+    padding-bottom: 14px;
     padding-left: 15px;
     padding-right: 60px;
     width: auto;
@@ -108,6 +107,10 @@
   top: 35px;
   right: 10px;
   opacity: 0.2;
+
+  &--mail {
+    right: 4px;
+  }
 
   @media (min-width: @tablet-width) {
     top: 63px;
@@ -136,15 +139,15 @@
 
     padding-left: 52px;
     padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 55px;
+    padding-top: 52px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 52px;
     padding-left: 111px;
     padding-right: 225px;
-    padding-bottom: 50px;
+    padding-bottom: 48px;
   }
 }
 
@@ -164,12 +167,10 @@
 .feedback__frame {
   margin-top: 20px;
   margin-bottom: 9px;
-  padding-top: 13px;
-  padding-left: 15px;
+  padding-left: 1px;
   padding-bottom: 15px;
   padding-right: 15px;
-  width: calc(100% - 8px);
-  min-height: 136px;
+  width: calc(100% - 19px);
 
   font-family: inherit;
   font-size: 19px;
@@ -199,6 +200,7 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
+    min-height: 138px;
     flex-grow: 1;
     margin: 0;
     padding: 0;
@@ -223,6 +225,7 @@
   @media (min-width: @desktop-width) {
     padding-left: 225px;
     padding-right: 225px;
+    padding-bottom: 39px;
   }
 }
 

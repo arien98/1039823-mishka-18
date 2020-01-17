@@ -31,6 +31,7 @@
   display: block;
   width: 100%;
   margin: 0;
+  margin-top: 5px;
   padding-top: 26px;
   padding-left: 28px;
   padding-right: 180px;
@@ -55,15 +56,23 @@
   &--interior:hover,
   &--interior:focus {
     min-height: 108px;
+    margin-top: 0;
     background-color: #59d5bc;
-    transform: translateY(-5px);
+    /*transform: translateY(-5px);*/
   }
 
   &--toys:hover,
   &--toys:focus {
     min-height: 108px;
+    margin-top: 0;
     background-color: #46c1ae;
-    transform: translateY(-5px);
+    /*transform: translateY(-5px);*/
+  }
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    &--toys {
+      transform: translateY(-6px);
+    }
   }
 
   @media (min-width: @tablet-width) {

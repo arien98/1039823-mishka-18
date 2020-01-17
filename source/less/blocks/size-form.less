@@ -44,7 +44,11 @@
 }
 
 .size-form__checkbox:not(:checked) + .size-form__item {
-  border: 2px solid @greyish-brown;
+  border: 2px solid @greyish-brown-10;
+
+  &:hover {
+    border: 2px solid @greyish-brown-30;
+  }
 }
 
 .size-form__checkbox:checked + .size-form__item {
