@@ -55,14 +55,14 @@ gulp.task("sprite", function () {
       inlineSvg: true
     }))
     .pipe(cheerio({
-			run: function ($) {
-				$('[fill]').removeAttr('fill');
-				$('[style]').removeAttr('style');
-			},
-			parserOptions: { xmlMode: true }
-		}))
-		// cheerio plugin create unnecessary string '>', so replace it.
-		//.pipe(replace('&gt;', '>'))
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    // cheerio plugin create unnecessary string '>', so replace it.
+    //.pipe(replace('&gt;', '>'))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
