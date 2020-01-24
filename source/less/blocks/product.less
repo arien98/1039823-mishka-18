@@ -154,21 +154,20 @@
   margin-left: auto;
   padding: 0;
 
+  svg {
+    fill: #d1d0ce;
+  }
+
   border: none;
   background-color: transparent;
 
-  &:hover,
+  &:hover svg,
   &:focus svg {
-    path {
-      fill: @seafoam-blue;
-    }
+    fill: @seafoam-blue;
   }
 
   &:active svg {
     opacity: 0.3;
-
-    path {
-      fill: @seafoam-blue;
-    }
+    fill: @seafoam-blue;
   }
 }
