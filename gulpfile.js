@@ -16,7 +16,6 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
 var del = require("del");
-var cheerio = require('gulp-cheerio');
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -54,15 +53,6 @@ gulp.task("sprite", function () {
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(cheerio({
-      run: function ($) {
-        $('[fill]').removeAttr('fill');
-        $('[style]').removeAttr('style');
-      },
-      parserOptions: { xmlMode: true }
-    }))
-    // cheerio plugin create unnecessary string '>', so replace it.
-    //.pipe(replace('&gt;', '>'))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
