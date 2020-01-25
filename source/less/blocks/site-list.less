@@ -31,7 +31,7 @@
   border-bottom: 1px solid @white-four;
 
 
-  @media (max-width: calc(@desktop-width - 1px)) {
+  @media (max-width: @not-desktop-width) {
     &--desktop-only {
       .visually-hidden();
     }

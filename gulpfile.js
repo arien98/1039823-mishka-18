@@ -15,7 +15,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
 var del = require("del");
-const htmlmin = require('gulp-htmlmin');
+var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 
 gulp.task("css", function () {
