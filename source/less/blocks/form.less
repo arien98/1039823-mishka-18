@@ -1,63 +1,108 @@
-.form__item {
-  position: relative;
+.form {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 55px;
+
+  font-size: 17px;
+  font-weight: bold;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    margin: 0;
+    margin-bottom: 10px;
 
-    padding-left: 52px;
-    padding-right: 50px;
-    padding-top: 55px;
-
-    background-color: @white-two;
-
-    &--mail {
-      padding-top: 0;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 111px;
-    padding-right: 225px;
+    font-size: 19px;
   }
 }
 
 .form__legend {
-  .feedback__legend();
+  display: block;
 
-  @media (min-width: @tablet-width) {
-    width: 167px;
-    margin-top: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @seafoam-blue;
+
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+
+      width: 200px;
+
+      border-bottom: 1px solid @seafoam-blue;
+      top: 50%;
+      left: 62px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    width: 114px;
+  &--data {
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+    @media (min-width: @tablet-width) {
+      width: 167px;
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 115px;
+    }
+  }
+
+  &--phone,
+  &--mail {
+    margin-bottom: 7px;
+
+    @media (min-width: @tablet-width) {
+      width: 222px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 132px;
+    }
+  }
+
+  &--frame {
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      width: 222px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 132px;
+    }
+  }
+
+  &--multitype {
+    margin-top: 0;
   }
 }
 
 .form__field {
-  .feedback__field();
-
-  margin-bottom: 30px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-right: 60px;
+  display: block;
   width: 100%;
+  height: 53px;
+
   box-sizing: border-box;
 
-  &--phone {
-    &::placeholder {
-      font-size: 19px;
-      line-height: 18px;
-      color: @greyish-brown-30;
-    }
-  }
+  font-weight: normal;
+  color: #444444;
 
-  &--mail {
-    &::placeholder {
-      font-size: 17px;
-      line-height: 18px;
-      color: @greyish-brown-30;
-    }
+  border: none;
+  border-bottom: 2px solid @black-two;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid @seafoam-blue;
   }
 
   &:hover + .form__icon,
@@ -70,25 +115,154 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 13px;
-    padding-bottom: 14px;
-    padding-left: 15px;
-    padding-right: 60px;
-    width: auto;
     flex-grow: 1;
 
     &--mail {
       &::placeholder {
         font-size: 19px;
       }
+    }
+  }
 
-      margin-bottom: 49px;
+  &::placeholder {
+    font-size: 17px;
+    color: @greyish-brown-30;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
+  }
+
+  &--data {
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      width: auto;
+      flex-grow: 1;
+
+      margin: 0;
+
+      &::placeholder {
+        font-size: 19px;
+      }
+    }
+  }
+
+  &--phone,
+  &--mail {
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+
+  &--frame {
+    padding: 15px;
+
+    border: 2px solid @black-two;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 2px solid @seafoam-blue;
+    }
+  }
+
+  &--frame {
+    min-height: 142px;
+    resize: vertical;
+  }
+}
+
+.form__label {
+  display: block;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: @black-two;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 25px;
+    font-size: 19px;
+  }
+}
+
+.form__data {
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    padding-left: 52px;
+    padding-right: 50px;
+    padding-top: 49px;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 111px;
+    padding-right: 225px;
+  }
+}
+
+.form__data-wrapper {
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 24px;
+  }
+}
+
+.form__frame {
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    padding-left: 52px;
+    padding-right: 50px;
+    padding-top: 50px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 48px;
+    padding-left: 111px;
+    padding-right: 225px;
+    margin-bottom: 48px;
+  }
+}
+
+.form__item {
+  position: relative;
+
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+
+    padding-left: 52px;
+    padding-right: 50px;
+    padding-top: 49px;
+    margin: 0;
+
+    background-color: @white-two;
+
+    &--mail {
+      padding-top: 23px;
+      padding-bottom: 50px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 11px;
-    padding-bottom: 15px;
+    padding-left: 111px;
+    padding-right: 225px;
   }
 }
 
@@ -107,7 +281,7 @@
     right: 76px;
 
     &--mail {
-      top: 6px;
+      top: 35px;
       right: 72px;
     }
   }
@@ -117,8 +291,76 @@
     right: 233px;
 
     &--mail {
-      top: 5px;
+      top: 34px;
       right: 229px;
     }
+  }
+}
+
+.form__additional-legend {
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+    margin-right: 128px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 75px;
+  }
+}
+
+.form__bottom-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-bottom: 39px;
+  }
+}
+
+.form__caption {
+  display: block;
+  margin-bottom: 33px;
+
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(68, 68, 68);
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+
+  font-size: 17px;
+  line-height: 47px;
+  font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+
+    width: 230px;
+    margin: 0;
+    margin-right: auto;
+    padding-right: 10px;
   }
 }

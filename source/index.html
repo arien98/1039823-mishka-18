@@ -70,26 +70,37 @@
         </ul>
       </div>
       <section class="week-product">
-        <h2 class="week-product__title">Вязаные корзинки</h2>
-        <p class="week-product__subhead">Товар недели</p>
-        <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <section class="week-product__qualities properties">
-          <div class="properties__row">
-            <p class="properties__name">Цвет:</p>
-            <p class="properties__col">«Тиффани»/серый</p>
-          </div>
-          <div class="properties__row">
-            <p class="properties__name">Диаметр:</p>
-            <p class="properties__col">25 см</p>
-          </div>
-          <div class="properties__row">
-            <p class="properties__name">Высота:</p>
-            <p class="properties__col">15 см</p>
-          </div>
-        </section>
-        <div class="week-product__pic"></div>
-        <p class="week-product__price">Цена: 990 руб.</p>
-        <button class="button week-product__button" type="button" name="button">Заказать</button>
+        <div class="week-product__title-wrapper">
+          <h2 class="week-product__title">Вязаные корзинки</h2>
+          <p class="week-product__subhead">Товар недели</p>
+        </div>
+        <div class="week-product__wrapper">
+          <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <table class="week-product__properties properties">
+            <tr class="properties__row">
+              <td class="properties__name">Цвет:</td>
+              <td class="properties__col">«Тиффани»/серый</td>
+            </tr>
+            <tr class="properties__row">
+              <td class="properties__name">Диаметр:</td>
+              <td class="properties__col">25 см</td>
+            </tr>
+            <tr class="properties__row">
+              <td class="properties__name">Высота:</td>
+              <td class="properties__col">15 см</td>
+            </tr>
+          </table>
+          <picture>
+            <source type="image/webp" srcset="img/triple-set-desktop@1x.webp, img/triple-set-desktop@2x.webp 2x" media="(min-width:1150px)">
+            <source type="image/webp" srcset="img/triple-set-tablet@1x.webp, img/triple-set-tablet@2x.webp 2x" media="(min-width:768px)">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+            <source srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x" media="(min-width:1150px)">
+            <source srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x" media="(min-width:768px)">
+            <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки" width="260" height="315">
+          </picture>
+          <p class="week-product__price">Цена: 990 руб.</p>
+          <button class="button week-product__button" type="button" name="button">Заказать</button>
+        </div>
       </section>
       <section class="odds">
         <div class="odds__container">
@@ -164,7 +175,7 @@
           </ul>
         </div>
         <div class="contacts__map">
-          <!-- <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716070592!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1576701738265!5m2!1sru!2sru" width="322" height="457" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716070592!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1576701738265!5m2!1sru!2sru" width="322" height="457" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
         <a href="form.html" class="button contacts__button">Напишите нам</a>
       </section>

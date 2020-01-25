@@ -14,8 +14,6 @@
 }
 
 .type__legend {
-  .feedback__legend();
-
   margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
@@ -33,7 +31,7 @@
 .type__wrapper {
   display: block;
 
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 55px;
@@ -48,11 +46,11 @@
 }
 
 .type__item {
-  .feedback__label();
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding-left: 64px;
+  padding-left: 80px;
+
   cursor: pointer;
 
   &::before {
@@ -95,20 +93,19 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-left: 81px;
 
     &::before {
       content: "";
-      top: -11px;
-      left: -81px;
+      top: -14px;
+      left: 0;
       width: 48px;
       height: 48px;
     }
 
     &::after {
       content: "";
-      top: 5px;
-      left: -65px;
+      top: 2px;
+      left: 16px;
       width: 20px;
       height: 20px;
     }
