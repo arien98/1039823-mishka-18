@@ -158,6 +158,9 @@
   &--frame {
     padding: 15px;
 
+    min-height: 142px;
+    resize: vertical;
+
     border: 2px solid @black-two;
 
     &:hover,
@@ -165,11 +168,6 @@
     &:active {
       border: 2px solid @seafoam-blue;
     }
-  }
-
-  &--frame {
-    min-height: 142px;
-    resize: vertical;
   }
 }
 
@@ -298,7 +296,6 @@
 }
 
 .form__additional-legend {
-
   @media (min-width: @tablet-width) {
     margin-top: 15px;
     margin-right: 128px;
