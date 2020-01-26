@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta сharset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <title>Каталог – HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic">
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
@@ -134,8 +135,8 @@
         <div class="production__wrapper">
           <h2 class="production__title">Процесс производства</h2>
           <div class="poduction__video-wrapper">
-            <video class="production__video" width="100%">
-              <source src="https://youtube.com/mishka-production">
+            <video class="production__video">
+              <source src="#">
             </video>
             <button class="production__video-button" type="button" name="button">
               <svg width="101" height="77">

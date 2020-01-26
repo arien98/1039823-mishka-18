@@ -6,7 +6,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
 
-    bottom: -80px;
     padding: 0 50px;
     margin: 0;
     min-height: 119px;
@@ -14,7 +13,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    bottom: -80px;
     width: 1050px;
   }
 }
@@ -29,19 +27,21 @@
   display: block;
   width: 100%;
   margin: 0;
-  margin-top: 5px;
   padding-top: 26px;
   padding-left: 28px;
   padding-right: 180px;
-  min-height: 103px;
+  min-height: 108px;
   box-sizing: border-box;
 
   font-size: 19px;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   line-height: 24px;
   text-align: left;
   text-decoration: none;
+
+  transform: translate(0, 5px);
+  transition: transform 0.2s ease;
 
   &--interior {
     background: @seafoam-blue url("../img/icon-interior.svg") no-repeat 88% 50%;
@@ -51,30 +51,23 @@
     background: @greeny-blue url("../img/icon-toy.svg") no-repeat 90% 50%;
   }
 
+  &:hover,
+  &:focus {
+    transform: translate(0, 0);
+  }
+
   &--interior:hover,
   &--interior:focus {
-    min-height: 108px;
-    margin-top: 0;
     background-color: #59d5bc;
-    transition: 0.2s ease;
   }
 
   &--toys:hover,
   &--toys:focus {
-    min-height: 108px;
-    margin-top: 0;
     background-color: #46c1ae;
-    transition: 0.2s ease;
-  }
-
-  @media (max-width: calc(@tablet-width - 1px)) {
-    &--toys {
-      transform: translateY(-6px);
-    }
   }
 
   @media (min-width: @tablet-width) {
-    min-height: 119px;
+    min-height: 125px;
     padding-right: 170px;
     padding-left: 38px;
 
@@ -87,16 +80,6 @@
 
     &--toys {
       background-position: 241px 30px;
-    }
-
-    &--interior:hover,
-    &--interior:focus {
-      min-height: 124px;
-    }
-
-    &--toys:hover,
-    &--toys:focus {
-      min-height: 124px;
     }
   }
 
