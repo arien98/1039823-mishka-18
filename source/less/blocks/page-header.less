@@ -63,12 +63,16 @@
     opacity: 0.3;
   }
 
+  &--with-button {
+
+  }
+
   @media (min-width: @tablet-width) {
     order: 1;
     min-height: 88px;
     width: 120px;
 
-    background: url("../img/logo-tablet.svg") no-repeat 0 50%;
+    background-image: url("../img/logo-tablet.svg");
   }
 
   @media (min-width: @desktop-width) {
@@ -76,8 +80,8 @@
 
     width: 185px;
     margin-left: auto;
-    margin-right: 65px;
-    background: url("../img/logo-desktop.svg") no-repeat 0 50%;
+    margin-right: 83px;
+    background-image: url("../img/logo-desktop.svg");
   }
 }
 
@@ -137,7 +141,7 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .page-header__logo::after {
+  .page-header__logo--with-button::after {
     content: "";
     position: absolute;
     z-index: 1;

@@ -59,7 +59,7 @@
       </div>
       <ul class="catalog">
         <li class="catalog__item product">
-          <a href="hare.html">
+          <a href="hare.html" tabindex="-1">
             <picture>
               <source type="image/webp" srcset="img/photo-hare-desktop@1x.webp, img/photo-hare-desktop@2x.webp 2x" media="(min-width:1150px)">
               <source type="image/webp" srcset="img/photo-hare-tablet@1x.webp, img/photo-hare-tablet@2x.webp 2x" media="(min-width:768px)">
@@ -71,19 +71,19 @@
           </a>
           <div class="product__wrapper">
             <a class="product__name" href="hare.html">Зайчик-попрыгайчик</a>
-            <p class="product__description">Рост 30 см, вес 200 г</p>
+            <p class="product__description">Рост 30&nbsp;см, вес 200&nbsp;г</p>
             <div class="product__price-wrapper">
-              <p class="product__price">1&thinsp;200 руб.</p>
-              <button class="product__button" type="button">
+              <p class="product__price">1&thinsp;200&nbsp;руб.</p>
+              <a class="product__button" href="product.html">
                 <svg width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </li>
         <li class="catalog__item product">
-          <a href="bowl.html">
+          <a href="bowl.html" tabindex="-1">
             <picture>
               <source type="image/webp" srcset="img/photo-bowl-desktop@1x.webp, img/photo-bowl-desktop@2x.webp 2x" media="(min-width:1150px)">
               <source type="image/webp" srcset="img/photo-bowl-tablet@1x.webp, img/photo-bowl-tablet@2x.webp 2x" media="(min-width:768px)">
@@ -95,19 +95,19 @@
           </a>
           <div class="product__wrapper">
             <a class="product__name" href="bowl.html">Корзинка для белья</a>
-            <p class="product__description">Диаметр 15 см, высота 10 см</p>
+            <p class="product__description">Диаметр 15&nbsp;см, высота 10&nbsp;см</p>
             <div class="product__price-wrapper">
-              <p class="product__price">690 руб.</p>
-              <button class="product__button" type="button" name="basket-button">
+              <p class="product__price">690&nbsp;руб.</p>
+              <a class="product__button" href="product.html">
                 <svg width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </li>
         <li class="catalog__item product">
-          <a href="photo-toys.html">
+          <a href="photo-toys.html" tabindex="-1">
             <picture>
               <source type="image/webp" srcset="img/photo-toys-desktop@1x.webp, img/photo-toys-desktop@2x.webp 2x" media="(min-width:1150px)">
               <source type="image/webp" srcset="img/photo-toys-tablet@1x.webp, img/photo-toys-tablet@2x.webp 2x" media="(min-width:768px)">
@@ -119,14 +119,14 @@
           </a>
           <div class="product__wrapper">
             <a class="product__name" href="photo-toys.html">Большая корзинка для игрушек</a>
-            <p class="product__description">Диаметр 30 см, высота 30 см</p>
+            <p class="product__description">Диаметр 30&nbsp;см, высота 30&nbsp;см</p>
             <div class="product__price-wrapper">
-              <p class="product__price">1&thinsp;500 руб.</p>
-              <button class="product__button" type="button" name="basket-button">
+              <p class="product__price">1&thinsp;500&nbsp;руб.</p>
+              <a class="product__button" href="product.html">
                 <svg width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </li>
@@ -156,24 +156,24 @@
         </svg>
       </a>
       <section class="page-footer__socials">
-        <h2 class="page-footer__header">Мы в социальных сетях</h2>
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="socials">
           <li class="socials__item">
-            <a class="socials__link socials__link--instagram" href="http://www.instagram.com/mishkashop">
+            <a class="socials__link socials__link--instagram" href="http://www.instagram.com/mishkashop" title="Мы в Инстраграмме">
               <svg class="socials__icon" width="22" height="22">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="http://www.facebook.com/mishkashop">
+            <a class="socials__link socials__link--facebook" href="http://www.facebook.com/mishkashop" title="Мы в Фэйсбуке">
               <svg class="socials__icon" width="15" height="28">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="http://www.twitter.com/mishkashop">
+            <a class="socials__link socials__link--twitter" href="http://www.twitter.com/mishkashop" title="Мы в Твиттере">
               <svg class="socials__icon" width="24" height="21">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -183,13 +183,14 @@
       </section>
       <section class="page-footer__copyright copyright">
         <h2 class="copyright__head">Разработано</h2>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Html academy">
           <svg class="copyright__icon" width="27" height="34">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </section>
     </footer>
+    <!-- Класс modal--active для показа модального окна -->
     <section class="modal">
       <div class="modal__wrapper">
         <h2 class="modal__title">Добавить в корзину</h2>

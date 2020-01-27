@@ -2,27 +2,7 @@
 @import "normalize.less";
 @import "mixins.less";
 @import "variables.less";
-
-body {
-  font-family: "Open Sans", "Tahoma", sans-serif;
-
-  margin: 0 auto;
-  width: @mobile-width;
-
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
-  }
-}
-
-.visually-hidden {
-  .visually-hidden();
-}
-
-@import "blocks/global.less";
+@import "global.less";
 @import "blocks/button.less";
 @import "blocks/page-header.less";
 @import "blocks/site-list.less";

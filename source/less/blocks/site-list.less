@@ -1,4 +1,8 @@
 .site-list {
+  &--off {
+    display: none;
+  }
+
   z-index: 2;
 
   margin: 0;
@@ -35,7 +39,7 @@
 
   @media (max-width: @not-desktop-width) {
     &--desktop-only {
-      .visually-hidden();
+      display: none;
     }
   }
 
