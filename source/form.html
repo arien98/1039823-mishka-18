@@ -18,7 +18,8 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html"></a>
+      <!-- Классы site-list--off и user-list--off для скрытия главного меню и page-header__logo--with-button для показа кнопки -->
+      <a class="page-header__logo" href="index.html"><span class="visually-hidden">Форма заявки "Мишка"</span></a>
         <ul class="page-header__site-list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -63,12 +64,12 @@
           <h2 class="form__legend type__legend">Тип</h2>
           <div class="type__block-wrapper">
             <div class="type__wrapper">
-              <input class="type__radio visually-hidden" type="radio" name="type" value="accessorу" id="accessorу" checked>
-              <label class="type__item" for="accessorу" tabindex="0">Аксессуар для интерьера</label>
+              <input class="type__radio" type="radio" name="type" value="accessorу" id="accessorу" checked>
+              <label class="type__item" for="accessorу">Аксессуар для интерьера</label>
             </div>
             <div class="type__wrapper">
-              <input class="type__radio visually-hidden" type="radio" name="type" value="toy" id="toy">
-              <label class="type__item" for="toy" tabindex="0">Детская игрушка</label>
+              <input class="type__radio" type="radio" name="type" value="toy" id="toy">
+              <label class="type__item" for="toy">Детская игрушка</label>
             </div>
           </div>
         </div>
@@ -76,28 +77,28 @@
           <h2 class="form__legend form__legend--multitype">Цвет</h2>
           <div class="multitype__block-wrapper">
             <div class="multitype__wrapper">
-              <input class="multitype__checkbox visually-hidden" type="checkbox" name="color" value="white" id="white" checked>
-              <label class="multitype__item" for="white" tabindex="0">Белый</label>
+              <input class="multitype__checkbox" type="checkbox" name="color" value="white" id="white" checked>
+              <label class="multitype__item" for="white">Белый</label>
             </div>
             <div class="multitype__wrapper">
-              <input class="multitype__checkbox visually-hidden" type="checkbox" name="color" value="gray" id="gray" checked>
-              <label class="multitype__item" for="gray" tabindex="0">Серый</label>
+              <input class="multitype__checkbox" type="checkbox" name="color" value="gray" id="gray" checked>
+              <label class="multitype__item" for="gray">Серый</label>
             </div>
             <div class="multitype__wrapper">
-              <input class="multitype__checkbox visually-hidden" type="checkbox" name="color" value="Tiffany" id="Tiffany">
-              <label class="multitype__item" for="Tiffany" tabindex="0">«Тиффани»</label>
+              <input class="multitype__checkbox" type="checkbox" name="color" value="Tiffany" id="Tiffany">
+              <label class="multitype__item" for="Tiffany">«Тиффани»</label>
             </div>
             <div class="multitype__wrapper">
-              <input class="multitype__checkbox visually-hidden" type="checkbox" name="color" value="black" id="black">
-              <label class="multitype__item" for="black" tabindex="0">Черный</label>
+              <input class="multitype__checkbox" type="checkbox" name="color" value="black" id="black">
+              <label class="multitype__item" for="black">Черный</label>
             </div>
             <div class="multitype__wrapper">
-              <input class="multitype__checkbox visually-hidden" type="checkbox" name="color" value="pink" id="pink">
-              <label class="multitype__item" for="pink" tabindex="0">Розовый</label>
+              <input class="multitype__checkbox" type="checkbox" name="color" value="pink" id="pink">
+              <label class="multitype__item" for="pink">Розовый</label>
             </div>
             <div class="multitype__wrapper">
-              <input class="multitype__checkbox visually-hidden" type="checkbox" name="color" value="orange" id="orange">
-              <label class="multitype__item" for="orange" tabindex="0">Оранжевый</label>
+              <input class="multitype__checkbox" type="checkbox" name="color" value="orange" id="orange">
+              <label class="multitype__item" for="orange">Оранжевый</label>
             </div>
           </div>
         </div>
@@ -152,21 +153,24 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="socials">
           <li class="socials__item">
-            <a class="socials__link socials__link--instagram" href="http://www.instagram.com/mishkashop" title="Мы в Инстраграмме">
+            <a class="socials__link socials__link--instagram" href="http://www.instagram.com/mishkashop">
+              <span class="visually-hidden">Мы в Инстраграмме</span>
               <svg class="socials__icon" width="22" height="22">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="http://www.facebook.com/mishkashop" title="Мы в Фэйсбуке">
+            <a class="socials__link socials__link--facebook" href="http://www.facebook.com/mishkashop">
+              <span class="visually-hidden">Мы в Фэйсбуке</span>
               <svg class="socials__icon" width="15" height="28">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="http://www.twitter.com/mishkashop" title="Мы в Твиттере">
+            <a class="socials__link socials__link--twitter" href="http://www.twitter.com/mishkashop">
+              <span class="visually-hidden">Мы в Твиттере</span>
               <svg class="socials__icon" width="24" height="21">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -176,7 +180,8 @@
       </section>
       <section class="page-footer__copyright copyright">
         <h2 class="copyright__head">Разработано</h2>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Html academy">
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">html academy</span>
           <svg class="copyright__icon" width="27" height="34">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>

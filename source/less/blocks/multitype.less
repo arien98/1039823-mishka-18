@@ -49,6 +49,7 @@
 
   position: relative;
   padding-left: 64px;
+  vertical-align: top;
 
   cursor: pointer;
 
@@ -113,4 +114,17 @@
 
 .multitype__checkbox:checked + .multitype__item::after {
   opacity: 1;
+}
+
+.multitype__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.multitype__checkbox:checked + .multitype__item::after {
+  opacity: 1;
+}
+
+.multitype__checkbox:focus + .multitype__item::before {
+  border: 2px solid @seafoam-blue;
 }
