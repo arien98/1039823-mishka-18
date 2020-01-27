@@ -45,11 +45,6 @@
   }
 }
 
-.type__radio {
-  position: absolute;
-  left: -99999999px;
-}
-
 .type__item {
   display: inline-block;
   vertical-align: top;
@@ -118,10 +113,6 @@
   }
 }
 
-.type__radio:checked + .type__item::after {
-  opacity: 1;
-}
-
 .type__radio {
   position: absolute;
   left: -9999px;
@@ -132,5 +123,5 @@
 }
 
 .type__radio:focus + .type__item::before {
-   border: 2px solid @seafoam-blue;
+  border: 2px solid @seafoam-blue;
 }
