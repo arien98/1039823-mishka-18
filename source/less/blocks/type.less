@@ -45,11 +45,15 @@
   }
 }
 
+.type__radio {
+  .visually-hidden();
+}
+
 .type__item {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding-left: 80px;
+  padding-left: 64px;
 
   cursor: pointer;
 
@@ -93,6 +97,8 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-left: 80px;
+
     &::before {
       content: "";
       top: -14px;

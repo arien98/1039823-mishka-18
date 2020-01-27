@@ -17,6 +17,8 @@
 .form__legend {
   display: block;
 
+  margin-bottom: 30px;
+
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
@@ -41,7 +43,6 @@
 
   &--data {
     margin-top: 20px;
-    margin-bottom: 32px;
 
     @media (min-width: @tablet-width) {
       width: 167px;
@@ -141,6 +142,7 @@
       flex-grow: 1;
 
       margin: 0;
+      height: 57px;
 
       &::placeholder {
         font-size: 19px;
@@ -148,8 +150,10 @@
     }
   }
 
+  &--data,
   &--phone,
-  &--mail {
+  &--mail,
+  &--frame {
     &::placeholder {
       font-size: 19px;
     }
@@ -186,7 +190,7 @@
 }
 
 .form__data {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -195,7 +199,7 @@
     padding-right: 50px;
     padding-top: 49px;
     margin: 0;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -212,7 +216,7 @@
     flex-direction: row;
     align-items: center;
 
-    margin-bottom: 24px;
+    margin-bottom: 19px;
   }
 }
 
