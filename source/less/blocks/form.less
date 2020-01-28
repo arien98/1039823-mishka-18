@@ -122,11 +122,20 @@
   }
 
   &--frame {
+    min-height: 143px;
+    padding: 15px;
+
     border: 2px solid @black-two;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 2px solid @seafoam-blue;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
-    width: auto;
     padding-left: 15px;
     margin: 0;
     height: 57px;
@@ -135,10 +144,6 @@
       &::placeholder {
         font-size: 19px;
       }
-    }
-
-    &--data {
-      margin-bottom: 20px;
     }
 
     &::placeholder {
@@ -161,7 +166,6 @@
       resize: vertical;
 
       border: 2px solid @black-two;
-
     }
   }
 }
@@ -242,13 +246,13 @@
 
     padding-left: 52px;
     padding-right: 50px;
-    padding-top: 49px;
+    padding-top: 47px;
     margin: 0;
 
     background-color: @white-two;
 
     &--mail {
-      padding-top: 23px;
+      padding-top: 18px;
       padding-bottom: 50px;
     }
   }
