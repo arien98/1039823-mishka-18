@@ -9,15 +9,13 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 
-    width: 425px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 30px;
+    width: 440px;
   }
 }
 
@@ -36,39 +34,48 @@
 
   border-bottom: 1px solid @white-four;
 
+  &--desktop-only {
+    display: none;
+  }
 
-  @media (max-width: @not-desktop-width) {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0;
+    padding: 10px 0;
+    min-height: 60px;
+    width: 165px;
+
+    font-size: 15px;
+
+    border: none;
+
     &--desktop-only {
       display: none;
     }
   }
 
-  @media (min-width: @tablet-width) {
-    margin: 0;
-    margin-right: 38px;
-    margin-bottom: 20px;
-    padding: 0;
-    min-height: auto;
-
-    font-size: 15px;
-
-    border: none;
-  }
-
   @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
     margin: 0;
-    margin-right: 70px;
-    margin-bottom: 51px;
+    margin-right: 35px;
+    padding: 10px 0;
+    min-height: 88px;
+    width: 185px;
 
     font-size: 17px;
 
-    &:nth-of-type(2n) {
-      margin-right: 0;
+    &:first-child {
+      border-right: 1px solid #ececec;
     }
 
-    &:nth-of-type(n+3) {
-      margin-right: 60px;
-      margin-bottom: 20px;
+    &:nth-child(n+3) {
+      min-height: 60px;
     }
 
     &--desktop-only {
@@ -91,5 +98,10 @@
   &:active {
     color: @black-30;
     outline: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    margin-left: 0;
   }
 }

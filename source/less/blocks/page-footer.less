@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 0 calc(50% - (@mobile-width / 2));
+  padding: 0 calc(50% - (@mobile-width / 2) + 30px);
 
   background-color: @white-two;
   background-origin: border-box;
@@ -7,16 +7,16 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 
-    padding: 0 calc(50% - (@tablet-width / 2));
+    padding: 0 calc(50% - (@tablet-width / 2) + 50px);
     padding-top: 50px;
     padding-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: calc(50% - (@desktop-width / 2));
-    padding-right: calc(50% - (@desktop-width / 2));
+    padding-left: calc(50% - (@desktop-width / 2) + 50px);
+    padding-right: calc(50% - (@desktop-width / 2) + 50px);
   }
 }
 
@@ -67,7 +67,6 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin-top: 7px;
     width: 183px;
   }
 }
