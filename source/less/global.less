@@ -17,3 +17,34 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.bg-white {
+  width: @mobile-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+.bg-strech {
+  padding-left: calc(50% - (@mobile-width / 2));
+  padding-right: calc(50% - (@mobile-width / 2));
+
+  background-origin: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-left: calc(50% - (@tablet-width / 2) + 50px);
+    padding-right: calc(50% - (@tablet-width / 2) + 50px);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: calc(50% - (@desktop-width / 2) + 112px);
+    padding-right: calc(50% - (@desktop-width / 2) + 225px);
+  }
+}
