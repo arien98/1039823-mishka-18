@@ -7,16 +7,12 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 46px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 50px;
   }
 }
 
@@ -38,30 +34,24 @@
   @media (max-width: @mobile-width-only) {
     display: none;
   }
-
-  @media (min-width: @tablet-width) {
-    margin-right: 149px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 340px;
-  }
 }
 
 .page-footer__socials {
   padding-top: 25px;
   padding-bottom: 23px;
-  padding-left: 47px;
-  padding-right: 51px;
 
   border-bottom: 1px solid lightgrey;
 
   @media (min-width: @tablet-width) {
-    margin-right: auto;
+    margin: 0 auto;
     margin-top: 8px;
     padding: 0;
-    min-width: 161px;
+    max-width: 300px;
     border: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 600px;
   }
 }
 
