@@ -2,6 +2,7 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
+  padding: 0 calc(50% - (@mobile-width / 2));
 
   border-top: 1px solid @white-four;
   border-bottom: 1px solid @white-four;
@@ -14,8 +15,7 @@
 
     width: 100%;
     box-sizing: border-box;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 calc(50% - (@tablet-width / 2) + 100px);
     border-top: 1px solid @white-four;
     border-bottom: 1px solid @white-four;
   }
@@ -26,8 +26,7 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 calc(50% - (@desktop-width / 2) + 100px);
     border-top: 1px solid @white-four;
     border-bottom: 1px solid @white-four;
 

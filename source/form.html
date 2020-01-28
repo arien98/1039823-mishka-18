@@ -60,90 +60,92 @@
           <h1 class="page-content__title">Вязание на заказ</h1>
         </div>
       </div>
-      <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__type type">
-          <h2 class="form__legend type__legend">Тип</h2>
-          <div class="type__block-wrapper">
-            <div class="type__wrapper">
-              <input class="type__radio" type="radio" name="type" value="accessorу" id="accessorу" checked>
-              <label class="type__item" for="accessorу">Аксессуар для интерьера</label>
-            </div>
-            <div class="type__wrapper">
-              <input class="type__radio" type="radio" name="type" value="toy" id="toy">
-              <label class="type__item" for="toy">Детская игрушка</label>
-            </div>
-          </div>
-        </div>
-        <div class="form__multitype multitype">
-          <h2 class="form__legend form__legend--multitype">Цвет</h2>
-          <div class="multitype__block-wrapper">
-            <div class="multitype__wrapper">
-              <input class="multitype__checkbox" type="checkbox" name="color" value="white" id="white" checked>
-              <label class="multitype__item" for="white">Белый</label>
-            </div>
-            <div class="multitype__wrapper">
-              <input class="multitype__checkbox" type="checkbox" name="color" value="gray" id="gray" checked>
-              <label class="multitype__item" for="gray">Серый</label>
-            </div>
-            <div class="multitype__wrapper">
-              <input class="multitype__checkbox" type="checkbox" name="color" value="Tiffany" id="Tiffany">
-              <label class="multitype__item" for="Tiffany">«Тиффани»</label>
-            </div>
-            <div class="multitype__wrapper">
-              <input class="multitype__checkbox" type="checkbox" name="color" value="black" id="black">
-              <label class="multitype__item" for="black">Черный</label>
-            </div>
-            <div class="multitype__wrapper">
-              <input class="multitype__checkbox" type="checkbox" name="color" value="pink" id="pink">
-              <label class="multitype__item" for="pink">Розовый</label>
-            </div>
-            <div class="multitype__wrapper">
-              <input class="multitype__checkbox" type="checkbox" name="color" value="orange" id="orange">
-              <label class="multitype__item" for="orange">Оранжевый</label>
+      <div class="site-wrapper">
+        <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__type type">
+            <h2 class="form__legend type__legend">Тип</h2>
+            <div class="type__block-wrapper">
+              <div class="type__wrapper">
+                <input class="type__radio" type="radio" name="type" value="accessorу" id="accessorу" checked>
+                <label class="type__item" for="accessorу">Аксессуар для интерьера</label>
+              </div>
+              <div class="type__wrapper">
+                <input class="type__radio" type="radio" name="type" value="toy" id="toy">
+                <label class="type__item" for="toy">Детская игрушка</label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="form__data data">
-          <h2 class="form__legend form__legend--data">ФИО</h2>
-          <div class="data__block-wrapper">
-            <div class="form__data-wrapper">
-              <label class="form__label" for="name">Имя:</label>
-              <input class="form__field form__field--data" type="text" name="name" id="name" required placeholder="Введите ваше имя*">
-            </div>
-            <div class="form__data-wrapper">
-              <label class="form__label" for="last-name">Фамилия:</label>
-              <input class="form__field form__field--data" type="text" name="last-name" id="last-name" required placeholder="Укажите фамилию*">
-            </div>
-            <div class="form__data-wrapper">
-              <label class="form__label" for="fathers-name">Отчество:</label>
-              <input class="form__field form__field--data" type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
+          <div class="form__multitype multitype">
+            <h2 class="form__legend form__legend--multitype">Цвет</h2>
+            <div class="multitype__block-wrapper">
+              <div class="multitype__wrapper">
+                <input class="multitype__checkbox" type="checkbox" name="color" value="white" id="white" checked>
+                <label class="multitype__item" for="white">Белый</label>
+              </div>
+              <div class="multitype__wrapper">
+                <input class="multitype__checkbox" type="checkbox" name="color" value="gray" id="gray" checked>
+                <label class="multitype__item" for="gray">Серый</label>
+              </div>
+              <div class="multitype__wrapper">
+                <input class="multitype__checkbox" type="checkbox" name="color" value="Tiffany" id="Tiffany">
+                <label class="multitype__item" for="Tiffany">«Тиффани»</label>
+              </div>
+              <div class="multitype__wrapper">
+                <input class="multitype__checkbox" type="checkbox" name="color" value="black" id="black">
+                <label class="multitype__item" for="black">Черный</label>
+              </div>
+              <div class="multitype__wrapper">
+                <input class="multitype__checkbox" type="checkbox" name="color" value="pink" id="pink">
+                <label class="multitype__item" for="pink">Розовый</label>
+              </div>
+              <div class="multitype__wrapper">
+                <input class="multitype__checkbox" type="checkbox" name="color" value="orange" id="orange">
+                <label class="multitype__item" for="orange">Оранжевый</label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="form__item form__item--phone">
-          <label class="form__legend form__legend--phone" for="phone">Тел</label>
-          <input class="form__field form__field--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-          <svg class="form__icon form__icon--phone" width="25" height="25">
-            <use xlink:href="#icon-phone"></use>
-          </svg>
-        </div>
-        <div class="form__item form__item--mail">
-          <label class="form__legend form__legend--mail" for="e-mail">E-mail</label>
-          <input class="form__field form__field--mail" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
-          <svg class="form__icon form__icon--mail"width="32" height="32">
-            <use xlink:href="#icon-mail"></use>
-          </svg>
-        </div>
-        <div class="form__frame">
-          <label class="form__legend form__legend--frame" for="additional">Доп</label>
-          <textarea class="form__field form__field--frame" name="additional" id="additional" rows="6" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </div>
-        <div class="form__bottom-wrapper">
-          <small class="form__caption">*Поля обязательны для заполнения</small>
-          <button class="button form__button" type="submit" name="form-button">Отправить заказ</button>
-        </div>
-      </form>
+          <div class="form__data data">
+            <h2 class="form__legend form__legend--data">ФИО</h2>
+            <div class="data__block-wrapper">
+              <div class="form__data-wrapper">
+                <label class="form__label" for="name">Имя:</label>
+                <input class="form__field form__field--data" type="text" name="name" id="name" required placeholder="Введите ваше имя*">
+              </div>
+              <div class="form__data-wrapper">
+                <label class="form__label" for="last-name">Фамилия:</label>
+                <input class="form__field form__field--data" type="text" name="last-name" id="last-name" required placeholder="Укажите фамилию*">
+              </div>
+              <div class="form__data-wrapper">
+                <label class="form__label" for="fathers-name">Отчество:</label>
+                <input class="form__field form__field--data" type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
+              </div>
+            </div>
+          </div>
+          <div class="form__item form__item--phone">
+            <label class="form__legend form__legend--phone" for="phone">Тел</label>
+            <input class="form__field form__field--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <svg class="form__icon form__icon--phone" width="25" height="25">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="form__item form__item--mail">
+            <label class="form__legend form__legend--mail" for="e-mail">E-mail</label>
+            <input class="form__field form__field--mail" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+            <svg class="form__icon form__icon--mail"width="32" height="32">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+          </div>
+          <div class="form__frame">
+            <label class="form__legend form__legend--frame" for="additional">Доп</label>
+            <textarea class="form__field form__field--frame" name="additional" id="additional" rows="6" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+          <div class="form__bottom-wrapper">
+            <small class="form__caption">*Поля обязательны для заполнения</small>
+            <button class="button form__button" type="submit" name="form-button">Отправить заказ</button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
